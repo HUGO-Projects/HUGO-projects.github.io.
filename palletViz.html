@@ -122,13 +122,17 @@
         var min_cluster_rank = d3.min(cluster_size_ranks);
         var max_cluster_rank = d3.max(cluster_size_ranks);
 
-        var xScale = d3.scaleLinear()
+        var xScale_dots = d3.scaleLinear()
             .domain([0, 255])
-            .range([200, width*.9]);
+            .range([width*.5, width*.8]);
+
+        var yScale_dots = d3.scaleLinear()
+            .domain([min_cluster_rank, max_cluster_rank])
+            .range([height*.8, 100]);
 
         var xScale_bars = d3.scaleLinear()
             .domain([min_cluster_size, max_cluster_size])
-            .range([200, width*.5]);
+            .range([100, width*.2]);
 
         var yScale_bars = d3.scaleLinear()
             .domain([min_cluster_rank, max_cluster_rank])
@@ -142,6 +146,106 @@
             .style("font-family", "Arial")
             .style("font-size", 25)
             .text("Palette dominance: " + sliderValue + "+% of palette");*/
+        var node = svg.append("g")
+            .selectAll("circle")
+            .data(filteredData)
+            .enter()
+            .append("circle")
+                .attr("clicks",0)
+                .attr("id",function(d) { return d.hex; })
+                .attr("ref_category",function(d) { return d.ref_category; })
+                .attr("ref_name",function(d) { return d.ref_name; })
+                .attr("pantone_name",function(d) { return d.pantone_name; })
+                .attr("rgb",function(d) { return d.rgb; })
+                .attr("r",function(d) { return (d.cluster_size)*0.01; })
+                .attr("cx", width*.2)
+                .attr("cy", height*.5)
+                //.style("fill", function(d) { return d.hex; })
+                .style("fill", function(d) {return `rgb(${parseFloat(d.rgb[0])}, ${parseFloat(d.rgb[1])}, ${parseFloat(d.rgb[2])})`; })
+                .style("fill-opacity", 0.9)
+                .attr("stroke", function(d) {return `rgb(${parseFloat(d.rgb[0])}, ${parseFloat(d.rgb[1])}, ${parseFloat(d.rgb[2])})`; })
+                .style("stroke-width", 1)
+                .call(d3.drag() // call specific function when circle is dragged
+                    .on("start", dragstarted)
+                    .on("drag", dragged)
+                    .on("end", dragended));
+
+        node.on("mouseover", function(d) {
+            d3.select(this)
+                .raise()
+                .transition()
+                .duration(200)
+                .style("fill-opacity", 1)
+                .attr("r",function(d) { return ((d.cluster_size)*0.01)*1.5; })
+                tooltip
+                    .style("left", (d3.select(this).attr("cx")) + "px")
+                    .style("top", (d3.select(this).attr("cy")) + "px")
+                    .style("width", function() {return (200) + "px"})
+                    .style('opacity', .8)
+                    .text(d3.select(this).attr("id")+": "+d3.select(this).attr("pantone_name")+": "+d3.select(this).attr("ref_name"));
+                });
+
+        node.on("mouseout", function(d) {
+            d3.select(this)
+                .raise()
+                .transition()
+                .duration(200)
+                .style("fill-opacity", 0.9)
+                .attr("r",function(d) { return (d.cluster_size)*0.01; })
+            tooltip
+                .transition()
+                .duration(200)
+                .style('opacity', 0);
+        });
+
+        node.on("click", function(d) {
+            let clicks = parseFloat(d3.select(this).attr("clicks"));
+            d3.select(this)
+                .attr("clicks",clicks += 1);
+            if (parseFloat(d3.select(this).attr("clicks")) % 2 !== 0){
+                d3.select(this)
+                    .attr("stroke", "white")
+                    .style("stroke-width", 5);
+                console.log(d3.select(this).attr("ref_name"))
+            } else if (parseFloat(d3.select(this).attr("clicks")) % 2 === 0){
+                d3.select(this)
+                    .style("stroke-width", 1);
+            };
+        });
+
+        // Features of the forces applied to the nodes:
+        var simulation = d3.forceSimulation()
+            .force("x", d3.forceX().strength(.005).x( function(d){ return xScale_dots(d.hue)} ))
+            .force("y", d3.forceY().strength(.0015).y( height/2 ))
+            .force("center", d3.forceCenter().x(width*.65).y(height / 2)) // Attraction to the center of the svg area
+            .force("charge", d3.forceManyBody().strength(.02)) // Nodes are attracted one each other of value is > 0
+            .force("collide", d3.forceCollide().strength(.03).radius(5).iterations(3)) // Force that avoids circle overlapping
+
+        simulation
+            .nodes(filteredData)
+            .on("tick", function(d){
+            node
+                .attr("cx", function(d){ return d.x; })
+                .attr("cy", function(d){ return d.y; })
+            });
+
+        // What happens when a circle is dragged?
+        function dragstarted(d) {
+            if (!d3.event.active) simulation.alphaTarget().restart();
+            d.fx = d.x;
+            d.fy = d.y;
+        }
+
+        function dragged(d) {
+            d.fx = d3.event.x;
+            d.fy = d3.event.y;
+        }
+
+        function dragended(d) {
+            if (!d3.event.active) simulation.alphaTarget();
+            d.fx = null;
+            d.fy = null;
+            }
 
         svg.selectAll("text")
             .data(filteredData)
@@ -152,7 +256,7 @@
                 .attr("text-anchor", "start")
                 .style("fill", "white")
                 .style("font-family", "Arial")
-                .style("font-size", (height/datalength)*.7)
+                .style("font-size", (height/datalength)*.4)
                 .text(d => `HEX: ${d.hex}, Pantone Name: ${d.pantone_name}`);
 
         var paths = svg.append("g")
