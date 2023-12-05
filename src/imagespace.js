@@ -131,7 +131,7 @@ function init() {
 
     document.getElementById('canvas').appendChild(renderer.domElement);
 
-    loadCSV('imageStats.csv');
+    loadCSV('../textures/imageStats.csv');
 
     const controls = new OrbitControls(camera, renderer.domElement);
     //controls.target.set(93.88782048351018, 87.84420278956175, 117.98061734475499);
