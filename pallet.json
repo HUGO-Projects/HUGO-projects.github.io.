@@ -1,0 +1,4754 @@
+{
+  "colors": [
+    {
+      "cluster_id": "0",
+      "cluster_size": 889,
+      "cluster_size_rank": 188,
+      "rgb": [
+        203,
+        193,
+        182
+      ],
+      "hex": "#cbc1b6",
+      "hue": 2.39,
+      "gs": 194.53,
+      "pantone_hex": "d0c5b1",
+      "pantone_name": "fog",
+      "cluster": [],
+      "group": 11,
+      "ref_category": "Grey",
+      "ref_name": "LightSlateGray"
+    },
+    {
+      "cluster_id": "1",
+      "cluster_size": 379,
+      "cluster_size_rank": 74,
+      "rgb": [
+        31,
+        69,
+        90
+      ],
+      "hex": "#1f455a",
+      "hue": 232.74,
+      "gs": 60.0,
+      "pantone_hex": "a3b4c4",
+      "pantone_name": "celestial-blue",
+      "cluster": [],
+      "group": 10,
+      "ref_category": "White",
+      "ref_name": "White"
+    },
+    {
+      "cluster_id": "2",
+      "cluster_size": 869,
+      "cluster_size_rank": 181,
+      "rgb": [
+        133,
+        126,
+        121
+      ],
+      "hex": "#857e79",
+      "hue": 1.12,
+      "gs": 127.39,
+      "pantone_hex": "918c7e",
+      "pantone_name": "laurel-oak",
+      "cluster": [],
+      "group": 11,
+      "ref_category": "Grey",
+      "ref_name": "DimGray"
+    },
+    {
+      "cluster_id": "3",
+      "cluster_size": 1227,
+      "cluster_size_rank": 226,
+      "rgb": [
+        41,
+        42,
+        43
+      ],
+      "hex": "#292a2b",
+      "hue": 239.77,
+      "gs": 41.77,
+      "pantone_hex": "3b3a36",
+      "pantone_name": "peat",
+      "cluster": [],
+      "group": 0,
+      "ref_category": "None",
+      "ref_name": "None"
+    },
+    {
+      "cluster_id": "4",
+      "cluster_size": 783,
+      "cluster_size_rank": 167,
+      "rgb": [
+        135,
+        175,
+        202
+      ],
+      "hex": "#87afca",
+      "hue": 232.55,
+      "gs": 165.98,
+      "pantone_hex": "7181a4",
+      "pantone_name": "english-manor",
+      "cluster": [],
+      "group": 0,
+      "ref_category": "None",
+      "ref_name": "None"
+    },
+    {
+      "cluster_id": "5",
+      "cluster_size": 2730,
+      "cluster_size_rank": 249,
+      "rgb": [
+        236,
+        240,
+        246
+      ],
+      "hex": "#ecf0f6",
+      "hue": 239.09,
+      "gs": 239.25,
+      "pantone_hex": "f2f0eb",
+      "pantone_name": "snow-white",
+      "cluster": [],
+      "group": 10,
+      "ref_category": "White",
+      "ref_name": "Linen"
+    },
+    {
+      "cluster_id": "6",
+      "cluster_size": 1027,
+      "cluster_size_rank": 206,
+      "rgb": [
+        61,
+        126,
+        176
+      ],
+      "hex": "#3d7eb0",
+      "hue": 229.46,
+      "gs": 112.2,
+      "pantone_hex": "c9d3dc",
+      "pantone_name": "illusion-blue",
+      "cluster": [],
+      "group": 8,
+      "ref_category": "Blue",
+      "ref_name": "RoyalBlue"
+    },
+    {
+      "cluster_id": "7",
+      "cluster_size": 194,
+      "cluster_size_rank": 19,
+      "rgb": [
+        241,
+        111,
+        2
+      ],
+      "hex": "#f16f02",
+      "hue": 13.24,
+      "gs": 137.2,
+      "pantone_hex": null,
+      "pantone_name": null,
+      "cluster": [],
+      "group": 0,
+      "ref_category": "None",
+      "ref_name": "None"
+    },
+    {
+      "cluster_id": "8",
+      "cluster_size": 709,
+      "cluster_size_rank": 156,
+      "rgb": [
+        101,
+        89,
+        78
+      ],
+      "hex": "#65594e",
+      "hue": 2.37,
+      "gs": 91.23,
+      "pantone_hex": "696156",
+      "pantone_name": "bungee-cord",
+      "cluster": [],
+      "group": 0,
+      "ref_category": "None",
+      "ref_name": "None"
+    },
+    {
+      "cluster_id": "9",
+      "cluster_size": 1202,
+      "cluster_size_rank": 221,
+      "rgb": [
+        153,
+        155,
+        164
+      ],
+      "hex": "#999ba4",
+      "hue": 239.55,
+      "gs": 155.28,
+      "pantone_hex": "aea692",
+      "pantone_name": "spray-green",
+      "cluster": [],
+      "group": 11,
+      "ref_category": "Grey",
+      "ref_name": "Gray"
+    },
+    {
+      "cluster_id": "10",
+      "cluster_size": 1417,
+      "cluster_size_rank": 237,
+      "rgb": [
+        200,
+        203,
+        209
+      ],
+      "hex": "#c8cbd1",
+      "hue": 239.32,
+      "gs": 202.59,
+      "pantone_hex": "ddd5c7",
+      "pantone_name": "birch",
+      "cluster": [],
+      "group": 11,
+      "ref_category": "Grey",
+      "ref_name": "DarkGray"
+    },
+    {
+      "cluster_id": "11",
+      "cluster_size": 1226,
+      "cluster_size_rank": 225,
+      "rgb": [
+        2,
+        103,
+        154
+      ],
+      "hex": "#02679a",
+      "hue": 225.11,
+      "gs": 78.61,
+      "pantone_hex": "5b609e",
+      "pantone_name": "iris-bloom",
+      "cluster": [],
+      "group": 0,
+      "ref_category": "None",
+      "ref_name": "None"
+    },
+    {
+      "cluster_id": "12",
+      "cluster_size": 581,
+      "cluster_size_rank": 121,
+      "rgb": [
+        6,
+        11,
+        22
+      ],
+      "hex": "#060b16",
+      "hue": 238.89,
+      "gs": 10.75,
+      "pantone_hex": null,
+      "pantone_name": null,
+      "cluster": [],
+      "group": 10,
+      "ref_category": "White",
+      "ref_name": "Ivory"
+    },
+    {
+      "cluster_id": "13",
+      "cluster_size": 797,
+      "cluster_size_rank": 175,
+      "rgb": [
+        75,
+        83,
+        93
+      ],
+      "hex": "#4b535d",
+      "hue": 238.24,
+      "gs": 81.67,
+      "pantone_hex": "686d6c",
+      "pantone_name": "sedona-sage",
+      "cluster": [],
+      "group": 0,
+      "ref_category": "None",
+      "ref_name": "None"
+    },
+    {
+      "cluster_id": "14",
+      "cluster_size": 231,
+      "cluster_size_rank": 31,
+      "rgb": [
+        196,
+        151,
+        122
+      ],
+      "hex": "#c4977a",
+      "hue": 5.29,
+      "gs": 160.95,
+      "pantone_hex": "c5ae91",
+      "pantone_name": "warm-sand",
+      "cluster": [],
+      "group": 5,
+      "ref_category": "Brown",
+      "ref_name": "RosyBrown"
+    },
+    {
+      "cluster_id": "15",
+      "cluster_size": 1292,
+      "cluster_size_rank": 231,
+      "rgb": [
+        179,
+        200,
+        217
+      ],
+      "hex": "#b3c8d9",
+      "hue": 235.7,
+      "gs": 195.48,
+      "pantone_hex": "ca9978",
+      "pantone_name": "toast",
+      "cluster": [],
+      "group": 8,
+      "ref_category": "Blue",
+      "ref_name": "LightSkyBlue"
+    },
+    {
+      "cluster_id": "16",
+      "cluster_size": 451,
+      "cluster_size_rank": 93,
+      "rgb": [
+        235,
+        213,
+        182
+      ],
+      "hex": "#ebd5b6",
+      "hue": 6.04,
+      "gs": 215.81,
+      "pantone_hex": "d8c0ad",
+      "pantone_name": "shifting-sand",
+      "cluster": [],
+      "group": 5,
+      "ref_category": "Brown",
+      "ref_name": "Wheat"
+    },
+    {
+      "cluster_id": "17",
+      "cluster_size": 642,
+      "cluster_size_rank": 135,
+      "rgb": [
+        90,
+        142,
+        193
+      ],
+      "hex": "#5a8ec1",
+      "hue": 231.28,
+      "gs": 132.18,
+      "pantone_hex": "77333b",
+      "pantone_name": "ruby-wine",
+      "cluster": [],
+      "group": 8,
+      "ref_category": "Blue",
+      "ref_name": "RoyalBlue"
+    },
+    {
+      "cluster_id": "18",
+      "cluster_size": 986,
+      "cluster_size_rank": 201,
+      "rgb": [
+        108,
+        111,
+        117
+      ],
+      "hex": "#6c6f75",
+      "hue": 239.32,
+      "gs": 110.68,
+      "pantone_hex": "82776b",
+      "pantone_name": "brindle",
+      "cluster": [],
+      "group": 11,
+      "ref_category": "Grey",
+      "ref_name": "Black"
+    },
+    {
+      "cluster_id": "19",
+      "cluster_size": 1544,
+      "cluster_size_rank": 240,
+      "rgb": [
+        0,
+        146,
+        155
+      ],
+      "hex": "#00929b",
+      "hue": 218.63,
+      "gs": 103.37,
+      "pantone_hex": "01858B",
+      "pantone_name": "Gulfstream",
+      "cluster": [],
+      "group": 7,
+      "ref_category": "Cyan",
+      "ref_name": "DarkCyan"
+    },
+    {
+      "cluster_id": "20",
+      "cluster_size": 490,
+      "cluster_size_rank": 99,
+      "rgb": [
+        77,
+        41,
+        36
+      ],
+      "hex": "#4d2924",
+      "hue": 1.01,
+      "gs": 51.12,
+      "pantone_hex": "483f39",
+      "pantone_name": "turkish-coffee",
+      "cluster": [],
+      "group": 0,
+      "ref_category": "None",
+      "ref_name": "None"
+    },
+    {
+      "cluster_id": "21",
+      "cluster_size": 199,
+      "cluster_size_rank": 21,
+      "rgb": [
+        246,
+        200,
+        122
+      ],
+      "hex": "#f6c87a",
+      "hue": 12.35,
+      "gs": 204.62,
+      "pantone_hex": "e6b2b8",
+      "pantone_name": "coral-blush",
+      "cluster": [],
+      "group": 0,
+      "ref_category": "None",
+      "ref_name": "None"
+    },
+    {
+      "cluster_id": "22",
+      "cluster_size": 519,
+      "cluster_size_rank": 107,
+      "rgb": [
+        76,
+        119,
+        151
+      ],
+      "hex": "#4c7797",
+      "hue": 232.18,
+      "gs": 109.71,
+      "pantone_hex": "4c7e86",
+      "pantone_name": "brittany-blue",
+      "cluster": [],
+      "group": 0,
+      "ref_category": "None",
+      "ref_name": "None"
+    },
+    {
+      "cluster_id": "23",
+      "cluster_size": 1231,
+      "cluster_size_rank": 227,
+      "rgb": [
+        159,
+        189,
+        210
+      ],
+      "hex": "#9fbdd2",
+      "hue": 234.12,
+      "gs": 182.26,
+      "pantone_hex": "bdb369",
+      "pantone_name": "golden-green",
+      "cluster": [],
+      "group": 8,
+      "ref_category": "Blue",
+      "ref_name": "LightSkyBlue"
+    },
+    {
+      "cluster_id": "24",
+      "cluster_size": 911,
+      "cluster_size_rank": 193,
+      "rgb": [
+        191,
+        179,
+        165
+      ],
+      "hex": "#bfb3a5",
+      "hue": 2.99,
+      "gs": 180.8,
+      "pantone_hex": "c1bcac",
+      "pantone_name": "pelican",
+      "cluster": [],
+      "group": 11,
+      "ref_category": "Grey",
+      "ref_name": "Gray"
+    },
+    {
+      "cluster_id": "25",
+      "cluster_size": 1057,
+      "cluster_size_rank": 208,
+      "rgb": [
+        221,
+        238,
+        245
+      ],
+      "hex": "#ddeef5",
+      "hue": 236.34,
+      "gs": 233.49,
+      "pantone_hex": "f2f0eb",
+      "pantone_name": "snow-white",
+      "cluster": [],
+      "group": 9,
+      "ref_category": "Purple",
+      "ref_name": "Plum"
+    },
+    {
+      "cluster_id": "26",
+      "cluster_size": 442,
+      "cluster_size_rank": 90,
+      "rgb": [
+        254,
+        157,
+        1
+      ],
+      "hex": "#fe9d01",
+      "hue": 18.43,
+      "gs": 167.97,
+      "pantone_hex": null,
+      "pantone_name": null,
+      "cluster": [],
+      "group": 2,
+      "ref_category": "Orange",
+      "ref_name": "Orange"
+    },
+    {
+      "cluster_id": "27",
+      "cluster_size": 1001,
+      "cluster_size_rank": 202,
+      "rgb": [
+        67,
+        60,
+        55
+      ],
+      "hex": "#433c37",
+      "hue": 1.12,
+      "gs": 61.46,
+      "pantone_hex": "4a4139",
+      "pantone_name": "wren",
+      "cluster": [],
+      "group": 0,
+      "ref_category": "None",
+      "ref_name": "None"
+    },
+    {
+      "cluster_id": "28",
+      "cluster_size": 345,
+      "cluster_size_rank": 59,
+      "rgb": [
+        151,
+        98,
+        141
+      ],
+      "hex": "#97628d",
+      "hue": 359,
+      "gs": 118.6,
+      "pantone_hex": "938772",
+      "pantone_name": "coriander",
+      "cluster": [],
+      "group": 0,
+      "ref_category": "None",
+      "ref_name": "None"
+    },
+    {
+      "cluster_id": "29",
+      "cluster_size": 473,
+      "cluster_size_rank": 96,
+      "rgb": [
+        61,
+        105,
+        140
+      ],
+      "hex": "#3d698c",
+      "hue": 232.1,
+      "gs": 95.77,
+      "pantone_hex": "66648b",
+      "pantone_name": "twilight-purple",
+      "cluster": [],
+      "group": 0,
+      "ref_category": "None",
+      "ref_name": "None"
+    },
+    {
+      "cluster_id": "30",
+      "cluster_size": 590,
+      "cluster_size_rank": 124,
+      "rgb": [
+        116,
+        206,
+        238
+      ],
+      "hex": "#74ceee",
+      "hue": 225.68,
+      "gs": 182.62,
+      "pantone_hex": "743332",
+      "pantone_name": "russet-brown",
+      "cluster": [],
+      "group": 8,
+      "ref_category": "Blue",
+      "ref_name": "CornflowerBlue"
+    },
+    {
+      "cluster_id": "31",
+      "cluster_size": 678,
+      "cluster_size_rank": 148,
+      "rgb": [
+        128,
+        152,
+        147
+      ],
+      "hex": "#809893",
+      "hue": 124.09,
+      "gs": 144.13,
+      "pantone_hex": "989a98",
+      "pantone_name": "limestone",
+      "cluster": [],
+      "group": 11,
+      "ref_category": "Grey",
+      "ref_name": "SlateGray"
+    },
+    {
+      "cluster_id": "32",
+      "cluster_size": 952,
+      "cluster_size_rank": 198,
+      "rgb": [
+        166,
+        183,
+        199
+      ],
+      "hex": "#a6b7c7",
+      "hue": 236.46,
+      "gs": 179.57,
+      "pantone_hex": "bbbcbc",
+      "pantone_name": "gray-violet",
+      "cluster": [],
+      "group": 8,
+      "ref_category": "Blue",
+      "ref_name": "LightSkyBlue"
+    },
+    {
+      "cluster_id": "33",
+      "cluster_size": 606,
+      "cluster_size_rank": 129,
+      "rgb": [
+        133,
+        117,
+        105
+      ],
+      "hex": "#857569",
+      "hue": 2.54,
+      "gs": 120.28,
+      "pantone_hex": "8a7963",
+      "pantone_name": "lead-gray",
+      "cluster": [],
+      "group": 11,
+      "ref_category": "Grey",
+      "ref_name": "DimGray"
+    },
+    {
+      "cluster_id": "34",
+      "cluster_size": 1074,
+      "cluster_size_rank": 210,
+      "rgb": [
+        24,
+        25,
+        21
+      ],
+      "hex": "#181915",
+      "hue": 119.31,
+      "gs": 24.22,
+      "pantone_hex": null,
+      "pantone_name": null,
+      "cluster": [],
+      "group": 0,
+      "ref_category": "None",
+      "ref_name": "None"
+    },
+    {
+      "cluster_id": "35",
+      "cluster_size": 958,
+      "cluster_size_rank": 199,
+      "rgb": [
+        84,
+        73,
+        63
+      ],
+      "hex": "#54493f",
+      "hue": 2.17,
+      "gs": 75.06,
+      "pantone_hex": "5b4f3b",
+      "pantone_name": "beech",
+      "cluster": [],
+      "group": 0,
+      "ref_category": "None",
+      "ref_name": "None"
+    },
+    {
+      "cluster_id": "36",
+      "cluster_size": 381,
+      "cluster_size_rank": 76,
+      "rgb": [
+        0,
+        52,
+        109
+      ],
+      "hex": "#00346d",
+      "hue": 231.43,
+      "gs": 42.95,
+      "pantone_hex": "988088",
+      "pantone_name": "toadstool",
+      "cluster": [],
+      "group": 0,
+      "ref_category": "None",
+      "ref_name": "None"
+    },
+    {
+      "cluster_id": "37",
+      "cluster_size": 322,
+      "cluster_size_rank": 54,
+      "rgb": [
+        239,
+        141,
+        132
+      ],
+      "hex": "#ef8d84",
+      "hue": 1.49,
+      "gs": 169.04,
+      "pantone_hex": "dbb0a2",
+      "pantone_name": "rose-cloud",
+      "cluster": [],
+      "group": 4,
+      "ref_category": "Red",
+      "ref_name": "LightCoral"
+    },
+    {
+      "cluster_id": "38",
+      "cluster_size": 1120,
+      "cluster_size_rank": 215,
+      "rgb": [
+        247,
+        240,
+        229
+      ],
+      "hex": "#f7f0e5",
+      "hue": 2.42,
+      "gs": 240.59,
+      "pantone_hex": "f2f0eb",
+      "pantone_name": "snow-white",
+      "cluster": [],
+      "group": 10,
+      "ref_category": "White",
+      "ref_name": "MistyRose"
+    },
+    {
+      "cluster_id": "39",
+      "cluster_size": 1247,
+      "cluster_size_rank": 228,
+      "rgb": [
+        213,
+        218,
+        225
+      ],
+      "hex": "#d5dae1",
+      "hue": 238.88,
+      "gs": 217.09,
+      "pantone_hex": "e7e9e7",
+      "pantone_name": "blanc-de-blanc",
+      "cluster": [],
+      "group": 11,
+      "ref_category": "Grey",
+      "ref_name": "Silver"
+    },
+    {
+      "cluster_id": "40",
+      "cluster_size": 792,
+      "cluster_size_rank": 171,
+      "rgb": [
+        47,
+        62,
+        81
+      ],
+      "hex": "#2f3e51",
+      "hue": 236.89,
+      "gs": 59.63,
+      "pantone_hex": "3a3536",
+      "pantone_name": "licorice",
+      "cluster": [],
+      "group": 10,
+      "ref_category": "White",
+      "ref_name": "White"
+    },
+    {
+      "cluster_id": "41",
+      "cluster_size": 78,
+      "cluster_size_rank": 5,
+      "rgb": [
+        188,
+        123,
+        39
+      ],
+      "hex": "#bc7b27",
+      "hue": 12.48,
+      "gs": 132.67,
+      "pantone_hex": "b31a38",
+      "pantone_name": "lipstick-red",
+      "cluster": [],
+      "group": 5,
+      "ref_category": "Brown",
+      "ref_name": "Chocolate"
+    },
+    {
+      "cluster_id": "42",
+      "cluster_size": 212,
+      "cluster_size_rank": 25,
+      "rgb": [
+        146,
+        104,
+        61
+      ],
+      "hex": "#92683d",
+      "hue": 7.59,
+      "gs": 111.51,
+      "pantone_hex": "4a3f41",
+      "pantone_name": "shale",
+      "cluster": [],
+      "group": 0,
+      "ref_category": "None",
+      "ref_name": "None"
+    },
+    {
+      "cluster_id": "43",
+      "cluster_size": 121,
+      "cluster_size_rank": 8,
+      "rgb": [
+        248,
+        175,
+        98
+      ],
+      "hex": "#f8af62",
+      "hue": 11.41,
+      "gs": 187.8,
+      "pantone_hex": "f88f58",
+      "pantone_name": "tangerine",
+      "cluster": [],
+      "group": 5,
+      "ref_category": "Brown",
+      "ref_name": "SandyBrown"
+    },
+    {
+      "cluster_id": "44",
+      "cluster_size": 1154,
+      "cluster_size_rank": 217,
+      "rgb": [
+        207,
+        186,
+        164
+      ],
+      "hex": "#cfbaa4",
+      "hue": 4.43,
+      "gs": 189.56,
+      "pantone_hex": "d8cfb2",
+      "pantone_name": "frozen-dew",
+      "cluster": [],
+      "group": 5,
+      "ref_category": "Brown",
+      "ref_name": "Tan"
+    },
+    {
+      "cluster_id": "45",
+      "cluster_size": 691,
+      "cluster_size_rank": 152,
+      "rgb": [
+        151,
+        173,
+        195
+      ],
+      "hex": "#97adc3",
+      "hue": 235.59,
+      "gs": 168.78,
+      "pantone_hex": "cac5c2",
+      "pantone_name": "wind-chime",
+      "cluster": [],
+      "group": 0,
+      "ref_category": "None",
+      "ref_name": "None"
+    },
+    {
+      "cluster_id": "46",
+      "cluster_size": 308,
+      "cluster_size_rank": 50,
+      "rgb": [
+        49,
+        72,
+        125
+      ],
+      "hex": "#31487d",
+      "hue": 235.83,
+      "gs": 71.12,
+      "pantone_hex": "66648b",
+      "pantone_name": "twilight-purple",
+      "cluster": [],
+      "group": 9,
+      "ref_category": "Purple",
+      "ref_name": "DarkViolet"
+    },
+    {
+      "cluster_id": "47",
+      "cluster_size": 341,
+      "cluster_size_rank": 57,
+      "rgb": [
+        177,
+        136,
+        104
+      ],
+      "hex": "#b18868",
+      "hue": 5.85,
+      "gs": 144.43,
+      "pantone_hex": "c2a594",
+      "pantone_name": "rugby-tan",
+      "cluster": [],
+      "group": 0,
+      "ref_category": "None",
+      "ref_name": "None"
+    },
+    {
+      "cluster_id": "48",
+      "cluster_size": 431,
+      "cluster_size_rank": 85,
+      "rgb": [
+        2,
+        60,
+        74
+      ],
+      "hex": "#023c4a",
+      "hue": 229.36,
+      "gs": 44.25,
+      "pantone_hex": "e86800",
+      "pantone_name": "exuberance",
+      "cluster": [],
+      "group": 0,
+      "ref_category": "None",
+      "ref_name": "None"
+    },
+    {
+      "cluster_id": "49",
+      "cluster_size": 752,
+      "cluster_size_rank": 161,
+      "rgb": [
+        146,
+        135,
+        126
+      ],
+      "hex": "#92877e",
+      "hue": 1.96,
+      "gs": 137.12,
+      "pantone_hex": "9c8e7b",
+      "pantone_name": "chinchilla",
+      "cluster": [],
+      "group": 11,
+      "ref_category": "Grey",
+      "ref_name": "DimGray"
+    },
+    {
+      "cluster_id": "50",
+      "cluster_size": 879,
+      "cluster_size_rank": 183,
+      "rgb": [
+        3,
+        22,
+        37
+      ],
+      "hex": "#031625",
+      "hue": 236.06,
+      "gs": 18.03,
+      "pantone_hex": null,
+      "pantone_name": null,
+      "cluster": [],
+      "group": 0,
+      "ref_category": "None",
+      "ref_name": "None"
+    },
+    {
+      "cluster_id": "51",
+      "cluster_size": 363,
+      "cluster_size_rank": 68,
+      "rgb": [
+        141,
+        140,
+        181
+      ],
+      "hex": "#8d8cb5",
+      "hue": 240.2,
+      "gs": 144.83,
+      "pantone_hex": "a49e9e",
+      "pantone_name": "opal-gray",
+      "cluster": [],
+      "group": 0,
+      "ref_category": "None",
+      "ref_name": "None"
+    },
+    {
+      "cluster_id": "52",
+      "cluster_size": 649,
+      "cluster_size_rank": 138,
+      "rgb": [
+        114,
+        172,
+        182
+      ],
+      "hex": "#72acb6",
+      "hue": 229.23,
+      "gs": 155.68,
+      "pantone_hex": "a5b2aa",
+      "pantone_name": "aqua-gray",
+      "cluster": [],
+      "group": 0,
+      "ref_category": "None",
+      "ref_name": "None"
+    },
+    {
+      "cluster_id": "53",
+      "cluster_size": 437,
+      "cluster_size_rank": 87,
+      "rgb": [
+        251,
+        168,
+        146
+      ],
+      "hex": "#fba892",
+      "hue": 3.67,
+      "gs": 190.06,
+      "pantone_hex": "f9ac2f",
+      "pantone_name": "citrus",
+      "cluster": [],
+      "group": 4,
+      "ref_category": "Red",
+      "ref_name": "LightSalmon"
+    },
+    {
+      "cluster_id": "54",
+      "cluster_size": 783,
+      "cluster_size_rank": 166,
+      "rgb": [
+        28,
+        110,
+        162
+      ],
+      "hex": "#1c6ea2",
+      "hue": 227.35,
+      "gs": 91.38,
+      "pantone_hex": "478589",
+      "pantone_name": "teal",
+      "cluster": [],
+      "group": 0,
+      "ref_category": "None",
+      "ref_name": "None"
+    },
+    {
+      "cluster_id": "55",
+      "cluster_size": 382,
+      "cluster_size_rank": 77,
+      "rgb": [
+        86,
+        142,
+        208
+      ],
+      "hex": "#568ed0",
+      "hue": 231.09,
+      "gs": 132.69,
+      "pantone_hex": "77333b",
+      "pantone_name": "ruby-wine",
+      "cluster": [],
+      "group": 0,
+      "ref_category": "None",
+      "ref_name": "None"
+    },
+    {
+      "cluster_id": "56",
+      "cluster_size": 1698,
+      "cluster_size_rank": 245,
+      "rgb": [
+        218,
+        215,
+        211
+      ],
+      "hex": "#dad7d3",
+      "hue": 0.92,
+      "gs": 215.22,
+      "pantone_hex": "e1dbc8",
+      "pantone_name": "white-asparagus",
+      "cluster": [],
+      "group": 11,
+      "ref_category": "Grey",
+      "ref_name": "DarkGray"
+    },
+    {
+      "cluster_id": "57",
+      "cluster_size": 252,
+      "cluster_size_rank": 36,
+      "rgb": [
+        122,
+        80,
+        113
+      ],
+      "hex": "#7a5071",
+      "hue": 359,
+      "gs": 96.2,
+      "pantone_hex": "80765f",
+      "pantone_name": "covert-green",
+      "cluster": [],
+      "group": 0,
+      "ref_category": "None",
+      "ref_name": "None"
+    },
+    {
+      "cluster_id": "58",
+      "cluster_size": 796,
+      "cluster_size_rank": 173,
+      "rgb": [
+        253,
+        246,
+        236
+      ],
+      "hex": "#fdf6ec",
+      "hue": 2.21,
+      "gs": 246.7,
+      "pantone_hex": "f2f0eb",
+      "pantone_name": "snow-white",
+      "cluster": [],
+      "group": 10,
+      "ref_category": "White",
+      "ref_name": "OldLace"
+    },
+    {
+      "cluster_id": "59",
+      "cluster_size": 365,
+      "cluster_size_rank": 69,
+      "rgb": [
+        123,
+        89,
+        57
+      ],
+      "hex": "#7b5939",
+      "hue": 5.98,
+      "gs": 95.39,
+      "pantone_hex": "4a3f41",
+      "pantone_name": "shale",
+      "cluster": [],
+      "group": 0,
+      "ref_category": "None",
+      "ref_name": "None"
+    },
+    {
+      "cluster_id": "60",
+      "cluster_size": 344,
+      "cluster_size_rank": 58,
+      "rgb": [
+        113,
+        176,
+        233
+      ],
+      "hex": "#71b0e9",
+      "hue": 229.92,
+      "gs": 163.55,
+      "pantone_hex": "335959",
+      "pantone_name": "jasper",
+      "cluster": [],
+      "group": 0,
+      "ref_category": "None",
+      "ref_name": "None"
+    },
+    {
+      "cluster_id": "61",
+      "cluster_size": 56,
+      "cluster_size_rank": 3,
+      "rgb": [
+        129,
+        35,
+        10
+      ],
+      "hex": "#81230a",
+      "hue": 4.01,
+      "gs": 60.13,
+      "pantone_hex": null,
+      "pantone_name": null,
+      "cluster": [],
+      "group": 0,
+      "ref_category": "None",
+      "ref_name": "None"
+    },
+    {
+      "cluster_id": "62",
+      "cluster_size": 1005,
+      "cluster_size_rank": 203,
+      "rgb": [
+        55,
+        59,
+        66
+      ],
+      "hex": "#373b42",
+      "hue": 239.1,
+      "gs": 58.55,
+      "pantone_hex": "4a4139",
+      "pantone_name": "wren",
+      "cluster": [],
+      "group": 10,
+      "ref_category": "White",
+      "ref_name": "White"
+    },
+    {
+      "cluster_id": "63",
+      "cluster_size": 213,
+      "cluster_size_rank": 26,
+      "rgb": [
+        68,
+        157,
+        202
+      ],
+      "hex": "#449dca",
+      "hue": 226.27,
+      "gs": 135.45,
+      "pantone_hex": "484a72",
+      "pantone_name": "skipper-blue",
+      "cluster": [],
+      "group": 0,
+      "ref_category": "None",
+      "ref_name": "None"
+    },
+    {
+      "cluster_id": "64",
+      "cluster_size": 688,
+      "cluster_size_rank": 150,
+      "rgb": [
+        115,
+        130,
+        148
+      ],
+      "hex": "#738294",
+      "hue": 236.88,
+      "gs": 127.45,
+      "pantone_hex": "80817d",
+      "pantone_name": "moon-mist",
+      "cluster": [],
+      "group": 11,
+      "ref_category": "Grey",
+      "ref_name": "DarkSlateGray"
+    },
+    {
+      "cluster_id": "65",
+      "cluster_size": 665,
+      "cluster_size_rank": 142,
+      "rgb": [
+        179,
+        166,
+        155
+      ],
+      "hex": "#b3a69b",
+      "hue": 2.37,
+      "gs": 168.45,
+      "pantone_hex": "b1b09f",
+      "pantone_name": "agate-gray",
+      "cluster": [],
+      "group": 11,
+      "ref_category": "Grey",
+      "ref_name": "Gray"
+    },
+    {
+      "cluster_id": "66",
+      "cluster_size": 629,
+      "cluster_size_rank": 133,
+      "rgb": [
+        182,
+        223,
+        238
+      ],
+      "hex": "#b6dfee",
+      "hue": 232.09,
+      "gs": 212.27,
+      "pantone_hex": "BEDBD8",
+      "pantone_name": "Meander Blue",
+      "cluster": [],
+      "group": 8,
+      "ref_category": "Blue",
+      "ref_name": "LightBlue"
+    },
+    {
+      "cluster_id": "67",
+      "cluster_size": 220,
+      "cluster_size_rank": 27,
+      "rgb": [
+        205,
+        114,
+        108
+      ],
+      "hex": "#cd726c",
+      "hue": 1.02,
+      "gs": 140.32,
+      "pantone_hex": "bfa77f",
+      "pantone_name": "taos-taupe",
+      "cluster": [],
+      "group": 4,
+      "ref_category": "Red",
+      "ref_name": "IndianRed"
+    },
+    {
+      "cluster_id": "68",
+      "cluster_size": 1006,
+      "cluster_size_rank": 204,
+      "rgb": [
+        162,
+        174,
+        186
+      ],
+      "hex": "#a2aeba",
+      "hue": 237.42,
+      "gs": 171.62,
+      "pantone_hex": "b1b09f",
+      "pantone_name": "agate-gray",
+      "cluster": [],
+      "group": 11,
+      "ref_category": "Grey",
+      "ref_name": "Gray"
+    },
+    {
+      "cluster_id": "69",
+      "cluster_size": 1784,
+      "cluster_size_rank": 247,
+      "rgb": [
+        161,
+        203,
+        227
+      ],
+      "hex": "#a1cbe3",
+      "hue": 232.15,
+      "gs": 193.02,
+      "pantone_hex": "bdb369",
+      "pantone_name": "golden-green",
+      "cluster": [],
+      "group": 8,
+      "ref_category": "Blue",
+      "ref_name": "LightSkyBlue"
+    },
+    {
+      "cluster_id": "70",
+      "cluster_size": 1332,
+      "cluster_size_rank": 235,
+      "rgb": [
+        197,
+        218,
+        227
+      ],
+      "hex": "#c5dae3",
+      "hue": 235.58,
+      "gs": 212.55,
+      "pantone_hex": "dde2d6",
+      "pantone_name": "frost",
+      "cluster": [],
+      "group": 8,
+      "ref_category": "Blue",
+      "ref_name": "LightBlue"
+    },
+    {
+      "cluster_id": "71",
+      "cluster_size": 1204,
+      "cluster_size_rank": 223,
+      "rgb": [
+        189,
+        189,
+        183
+      ],
+      "hex": "#bdbdb7",
+      "hue": 1.38,
+      "gs": 188.13,
+      "pantone_hex": "c1bcac",
+      "pantone_name": "pelican",
+      "cluster": [],
+      "group": 11,
+      "ref_category": "Grey",
+      "ref_name": "LightSlateGray"
+    },
+    {
+      "cluster_id": "72",
+      "cluster_size": 519,
+      "cluster_size_rank": 108,
+      "rgb": [
+        75,
+        145,
+        153
+      ],
+      "hex": "#4b9199",
+      "hue": 227.39,
+      "gs": 124.91,
+      "pantone_hex": "384c67",
+      "pantone_name": "ensign-blue",
+      "cluster": [],
+      "group": 7,
+      "ref_category": "Cyan",
+      "ref_name": "CadetBlue"
+    },
+    {
+      "cluster_id": "73",
+      "cluster_size": 319,
+      "cluster_size_rank": 52,
+      "rgb": [
+        111,
+        92,
+        163
+      ],
+      "hex": "#6f5ca3",
+      "hue": 243.5,
+      "gs": 105.66,
+      "pantone_hex": "8e918f",
+      "pantone_name": "neutral-gray",
+      "cluster": [],
+      "group": 0,
+      "ref_category": "None",
+      "ref_name": "None"
+    },
+    {
+      "cluster_id": "74",
+      "cluster_size": 708,
+      "cluster_size_rank": 155,
+      "rgb": [
+        230,
+        224,
+        207
+      ],
+      "hex": "#e6e0cf",
+      "hue": 3.67,
+      "gs": 223.63,
+      "pantone_hex": "ede6db",
+      "pantone_name": "whisper-white",
+      "cluster": [],
+      "group": 11,
+      "ref_category": "Grey",
+      "ref_name": "Silver"
+    },
+    {
+      "cluster_id": "75",
+      "cluster_size": 421,
+      "cluster_size_rank": 83,
+      "rgb": [
+        59,
+        28,
+        16
+      ],
+      "hex": "#3b1c10",
+      "hue": 2.42,
+      "gs": 35.84,
+      "pantone_hex": null,
+      "pantone_name": null,
+      "cluster": [],
+      "group": 0,
+      "ref_category": "None",
+      "ref_name": "None"
+    },
+    {
+      "cluster_id": "76",
+      "cluster_size": 357,
+      "cluster_size_rank": 65,
+      "rgb": [
+        72,
+        80,
+        133
+      ],
+      "hex": "#485085",
+      "hue": 238.48,
+      "gs": 83.58,
+      "pantone_hex": "66648b",
+      "pantone_name": "twilight-purple",
+      "cluster": [],
+      "group": 9,
+      "ref_category": "Purple",
+      "ref_name": "DarkViolet"
+    },
+    {
+      "cluster_id": "77",
+      "cluster_size": 610,
+      "cluster_size_rank": 131,
+      "rgb": [
+        146,
+        174,
+        167
+      ],
+      "hex": "#92aea7",
+      "hue": 124.45,
+      "gs": 164.68,
+      "pantone_hex": "a09f9c",
+      "pantone_name": "drizzle",
+      "cluster": [],
+      "group": 11,
+      "ref_category": "Grey",
+      "ref_name": "Gray"
+    },
+    {
+      "cluster_id": "78",
+      "cluster_size": 964,
+      "cluster_size_rank": 200,
+      "rgb": [
+        117,
+        108,
+        100
+      ],
+      "hex": "#756c64",
+      "hue": 1.76,
+      "gs": 109.66,
+      "pantone_hex": "80765f",
+      "pantone_name": "covert-green",
+      "cluster": [],
+      "group": 11,
+      "ref_category": "Grey",
+      "ref_name": "Black"
+    },
+    {
+      "cluster_id": "79",
+      "cluster_size": 462,
+      "cluster_size_rank": 95,
+      "rgb": [
+        106,
+        171,
+        210
+      ],
+      "hex": "#6aabd2",
+      "hue": 229.14,
+      "gs": 155.91,
+      "pantone_hex": "77333b",
+      "pantone_name": "ruby-wine",
+      "cluster": [],
+      "group": 0,
+      "ref_category": "None",
+      "ref_name": "None"
+    },
+    {
+      "cluster_id": "80",
+      "cluster_size": 1683,
+      "cluster_size_rank": 244,
+      "rgb": [
+        2,
+        4,
+        6
+      ],
+      "hex": "#020406",
+      "hue": 239.54,
+      "gs": 3.63,
+      "pantone_hex": null,
+      "pantone_name": null,
+      "cluster": [],
+      "group": 10,
+      "ref_category": "White",
+      "ref_name": "Ivory"
+    },
+    {
+      "cluster_id": "81",
+      "cluster_size": 304,
+      "cluster_size_rank": 48,
+      "rgb": [
+        162,
+        124,
+        148
+      ],
+      "hex": "#a27c94",
+      "hue": 359,
+      "gs": 137.94,
+      "pantone_hex": "a79b82",
+      "pantone_name": "twill",
+      "cluster": [],
+      "group": 0,
+      "ref_category": "None",
+      "ref_name": "None"
+    },
+    {
+      "cluster_id": "82",
+      "cluster_size": 1381,
+      "cluster_size_rank": 236,
+      "rgb": [
+        34,
+        35,
+        34
+      ],
+      "hex": "#222322",
+      "hue": 120.0,
+      "gs": 34.55,
+      "pantone_hex": "2f2d30",
+      "pantone_name": "moonless-night",
+      "cluster": [],
+      "group": 0,
+      "ref_category": "None",
+      "ref_name": "None"
+    },
+    {
+      "cluster_id": "83",
+      "cluster_size": 443,
+      "cluster_size_rank": 91,
+      "rgb": [
+        49,
+        116,
+        143
+      ],
+      "hex": "#31748f",
+      "hue": 228.48,
+      "gs": 99.0,
+      "pantone_hex": "1f5da0",
+      "pantone_name": "strong-blue",
+      "cluster": [],
+      "group": 0,
+      "ref_category": "None",
+      "ref_name": "None"
+    },
+    {
+      "cluster_id": "84",
+      "cluster_size": 777,
+      "cluster_size_rank": 164,
+      "rgb": [
+        228,
+        203,
+        175
+      ],
+      "hex": "#e4cbaf",
+      "hue": 5.45,
+      "gs": 207.05,
+      "pantone_hex": "e9d1bf",
+      "pantone_name": "pastel-rose-tan",
+      "cluster": [],
+      "group": 5,
+      "ref_category": "Brown",
+      "ref_name": "Wheat"
+    },
+    {
+      "cluster_id": "85",
+      "cluster_size": 1276,
+      "cluster_size_rank": 229,
+      "rgb": [
+        166,
+        161,
+        161
+      ],
+      "hex": "#a6a1a1",
+      "hue": 360,
+      "gs": 162.33,
+      "pantone_hex": "b1b09f",
+      "pantone_name": "agate-gray",
+      "cluster": [],
+      "group": 11,
+      "ref_category": "Grey",
+      "ref_name": "Gray"
+    },
+    {
+      "cluster_id": "86",
+      "cluster_size": 674,
+      "cluster_size_rank": 147,
+      "rgb": [
+        83,
+        95,
+        109
+      ],
+      "hex": "#535f6d",
+      "hue": 237.44,
+      "gs": 92.92,
+      "pantone_hex": "646762",
+      "pantone_name": "castor-gray",
+      "cluster": [],
+      "group": 11,
+      "ref_category": "Grey",
+      "ref_name": "Black"
+    },
+    {
+      "cluster_id": "87",
+      "cluster_size": 1012,
+      "cluster_size_rank": 205,
+      "rgb": [
+        90,
+        90,
+        93
+      ],
+      "hex": "#5a5a5d",
+      "hue": 240.0,
+      "gs": 90.25,
+      "pantone_hex": "696156",
+      "pantone_name": "bungee-cord",
+      "cluster": [],
+      "group": 11,
+      "ref_category": "Grey",
+      "ref_name": "Black"
+    },
+    {
+      "cluster_id": "88",
+      "cluster_size": 1317,
+      "cluster_size_rank": 232,
+      "rgb": [
+        173,
+        172,
+        171
+      ],
+      "hex": "#adacab",
+      "hue": 0.23,
+      "gs": 172.01,
+      "pantone_hex": "bfb9a3",
+      "pantone_name": "tidal-foam",
+      "cluster": [],
+      "group": 11,
+      "ref_category": "Grey",
+      "ref_name": "Gray"
+    },
+    {
+      "cluster_id": "89",
+      "cluster_size": 730,
+      "cluster_size_rank": 160,
+      "rgb": [
+        81,
+        61,
+        45
+      ],
+      "hex": "#513d2d",
+      "hue": 3.3,
+      "gs": 65.07,
+      "pantone_hex": "4a4139",
+      "pantone_name": "wren",
+      "cluster": [],
+      "group": 0,
+      "ref_category": "None",
+      "ref_name": "None"
+    },
+    {
+      "cluster_id": "90",
+      "cluster_size": 673,
+      "cluster_size_rank": 145,
+      "rgb": [
+        63,
+        72,
+        84
+      ],
+      "hex": "#3f4854",
+      "hue": 238.04,
+      "gs": 70.61,
+      "pantone_hex": "5f5e62",
+      "pantone_name": "castlerock",
+      "cluster": [],
+      "group": 10,
+      "ref_category": "White",
+      "ref_name": "White"
+    },
+    {
+      "cluster_id": "91",
+      "cluster_size": 275,
+      "cluster_size_rank": 39,
+      "rgb": [
+        198,
+        134,
+        147
+      ],
+      "hex": "#c68693",
+      "hue": 359,
+      "gs": 154.42,
+      "pantone_hex": "d5ba98",
+      "pantone_name": "beige",
+      "cluster": [],
+      "group": 5,
+      "ref_category": "Brown",
+      "ref_name": "RosyBrown"
+    },
+    {
+      "cluster_id": "92",
+      "cluster_size": 586,
+      "cluster_size_rank": 122,
+      "rgb": [
+        1,
+        153,
+        172
+      ],
+      "hex": "#0199ac",
+      "hue": 218.59,
+      "gs": 109.72,
+      "pantone_hex": null,
+      "pantone_name": null,
+      "cluster": [],
+      "group": 0,
+      "ref_category": "None",
+      "ref_name": "None"
+    },
+    {
+      "cluster_id": "93",
+      "cluster_size": 250,
+      "cluster_size_rank": 35,
+      "rgb": [
+        239,
+        203,
+        151
+      ],
+      "hex": "#efcb97",
+      "hue": 9.1,
+      "gs": 207.6,
+      "pantone_hex": "edd0dd",
+      "pantone_name": "cradle-pink",
+      "cluster": [],
+      "group": 1,
+      "ref_category": "Yellow",
+      "ref_name": "Khaki"
+    },
+    {
+      "cluster_id": "94",
+      "cluster_size": 238,
+      "cluster_size_rank": 34,
+      "rgb": [
+        3,
+        84,
+        114
+      ],
+      "hex": "#035472",
+      "hue": 226.72,
+      "gs": 63.2,
+      "pantone_hex": "5d89b3",
+      "pantone_name": "lichen-blue",
+      "cluster": [],
+      "group": 0,
+      "ref_category": "None",
+      "ref_name": "None"
+    },
+    {
+      "cluster_id": "95",
+      "cluster_size": 592,
+      "cluster_size_rank": 125,
+      "rgb": [
+        100,
+        144,
+        174
+      ],
+      "hex": "#6490ae",
+      "hue": 231.98,
+      "gs": 134.16,
+      "pantone_hex": "3f5277",
+      "pantone_name": "true-navy",
+      "cluster": [],
+      "group": 7,
+      "ref_category": "Cyan",
+      "ref_name": "CadetBlue"
+    },
+    {
+      "cluster_id": "96",
+      "cluster_size": 815,
+      "cluster_size_rank": 177,
+      "rgb": [
+        148,
+        143,
+        140
+      ],
+      "hex": "#948f8c",
+      "hue": 0.68,
+      "gs": 144.0,
+      "pantone_hex": "9c8e7b",
+      "pantone_name": "chinchilla",
+      "cluster": [],
+      "group": 11,
+      "ref_category": "Grey",
+      "ref_name": "DimGray"
+    },
+    {
+      "cluster_id": "97",
+      "cluster_size": 322,
+      "cluster_size_rank": 55,
+      "rgb": [
+        164,
+        118,
+        82
+      ],
+      "hex": "#a47652",
+      "hue": 6.41,
+      "gs": 127.49,
+      "pantone_hex": "b68f52",
+      "pantone_name": "honey-mustard",
+      "cluster": [],
+      "group": 0,
+      "ref_category": "None",
+      "ref_name": "None"
+    },
+    {
+      "cluster_id": "98",
+      "cluster_size": 179,
+      "cluster_size_rank": 15,
+      "rgb": [
+        88,
+        55,
+        99
+      ],
+      "hex": "#583763",
+      "hue": 246.62,
+      "gs": 69.8,
+      "pantone_hex": "5f575c",
+      "pantone_name": "rabbit",
+      "cluster": [],
+      "group": 0,
+      "ref_category": "None",
+      "ref_name": "None"
+    },
+    {
+      "cluster_id": "99",
+      "cluster_size": 375,
+      "cluster_size_rank": 72,
+      "rgb": [
+        135,
+        89,
+        140
+      ],
+      "hex": "#87598c",
+      "hue": 249.02,
+      "gs": 108.43,
+      "pantone_hex": "8a7963",
+      "pantone_name": "lead-gray",
+      "cluster": [],
+      "group": 0,
+      "ref_category": "None",
+      "ref_name": "None"
+    },
+    {
+      "cluster_id": "100",
+      "cluster_size": 879,
+      "cluster_size_rank": 184,
+      "rgb": [
+        89,
+        80,
+        79
+      ],
+      "hex": "#59504f",
+      "hue": 0.23,
+      "gs": 82.49,
+      "pantone_hex": "696156",
+      "pantone_name": "bungee-cord",
+      "cluster": [],
+      "group": 0,
+      "ref_category": "None",
+      "ref_name": "None"
+    },
+    {
+      "cluster_id": "101",
+      "cluster_size": 666,
+      "cluster_size_rank": 143,
+      "rgb": [
+        59,
+        82,
+        111
+      ],
+      "hex": "#3b526f",
+      "hue": 235.5,
+      "gs": 78.37,
+      "pantone_hex": "5f5e62",
+      "pantone_name": "castlerock",
+      "cluster": [],
+      "group": 0,
+      "ref_category": "None",
+      "ref_name": "None"
+    },
+    {
+      "cluster_id": "102",
+      "cluster_size": 1480,
+      "cluster_size_rank": 238,
+      "rgb": [
+        171,
+        194,
+        211
+      ],
+      "hex": "#abc2d3",
+      "hue": 235.32,
+      "gs": 188.89,
+      "pantone_hex": "ca9978",
+      "pantone_name": "toast",
+      "cluster": [],
+      "group": 8,
+      "ref_category": "Blue",
+      "ref_name": "LightSkyBlue"
+    },
+    {
+      "cluster_id": "103",
+      "cluster_size": 1540,
+      "cluster_size_rank": 239,
+      "rgb": [
+        216,
+        207,
+        200
+      ],
+      "hex": "#d8cfc8",
+      "hue": 1.55,
+      "gs": 208.68,
+      "pantone_hex": "e1dbc8",
+      "pantone_name": "white-asparagus",
+      "cluster": [],
+      "group": 11,
+      "ref_category": "Grey",
+      "ref_name": "DarkGray"
+    },
+    {
+      "cluster_id": "104",
+      "cluster_size": 645,
+      "cluster_size_rank": 136,
+      "rgb": [
+        78,
+        133,
+        170
+      ],
+      "hex": "#4e85aa",
+      "hue": 230.49,
+      "gs": 120.69,
+      "pantone_hex": "c9d3dc",
+      "pantone_name": "illusion-blue",
+      "cluster": [],
+      "group": 8,
+      "ref_category": "Blue",
+      "ref_name": "RoyalBlue"
+    },
+    {
+      "cluster_id": "105",
+      "cluster_size": 502,
+      "cluster_size_rank": 104,
+      "rgb": [
+        33,
+        88,
+        119
+      ],
+      "hex": "#215877",
+      "hue": 230.32,
+      "gs": 75.06,
+      "pantone_hex": "262c2a",
+      "pantone_name": "jet-set",
+      "cluster": [],
+      "group": 0,
+      "ref_category": "None",
+      "ref_name": "None"
+    },
+    {
+      "cluster_id": "106",
+      "cluster_size": 192,
+      "cluster_size_rank": 18,
+      "rgb": [
+        191,
+        141,
+        75
+      ],
+      "hex": "#bf8d4b",
+      "hue": 10.67,
+      "gs": 148.24,
+      "pantone_hex": "c96551",
+      "pantone_name": "ginger",
+      "cluster": [],
+      "group": 5,
+      "ref_category": "Brown",
+      "ref_name": "Peru"
+    },
+    {
+      "cluster_id": "107",
+      "cluster_size": 405,
+      "cluster_size_rank": 80,
+      "rgb": [
+        2,
+        74,
+        91
+      ],
+      "hex": "#024a5b",
+      "hue": 227.44,
+      "gs": 54.41,
+      "pantone_hex": "615c60",
+      "pantone_name": "volcanic-glass",
+      "cluster": [],
+      "group": 0,
+      "ref_category": "None",
+      "ref_name": "None"
+    },
+    {
+      "cluster_id": "108",
+      "cluster_size": 488,
+      "cluster_size_rank": 98,
+      "rgb": [
+        88,
+        166,
+        210
+      ],
+      "hex": "#58a6d2",
+      "hue": 227.59,
+      "gs": 147.61,
+      "pantone_hex": "77333b",
+      "pantone_name": "ruby-wine",
+      "cluster": [],
+      "group": 0,
+      "ref_category": "None",
+      "ref_name": "None"
+    },
+    {
+      "cluster_id": "109",
+      "cluster_size": 1683,
+      "cluster_size_rank": 243,
+      "rgb": [
+        19,
+        29,
+        31
+      ],
+      "hex": "#131d1f",
+      "hue": 237.75,
+      "gs": 26.22,
+      "pantone_hex": null,
+      "pantone_name": null,
+      "cluster": [],
+      "group": 0,
+      "ref_category": "None",
+      "ref_name": "None"
+    },
+    {
+      "cluster_id": "110",
+      "cluster_size": 521,
+      "cluster_size_rank": 109,
+      "rgb": [
+        25,
+        52,
+        74
+      ],
+      "hex": "#19344a",
+      "hue": 234.67,
+      "gs": 46.41,
+      "pantone_hex": "fbc85f",
+      "pantone_name": "samoan-sun",
+      "cluster": [],
+      "group": 0,
+      "ref_category": "None",
+      "ref_name": "None"
+    },
+    {
+      "cluster_id": "111",
+      "cluster_size": 433,
+      "cluster_size_rank": 86,
+      "rgb": [
+        65,
+        64,
+        31
+      ],
+      "hex": "#41401f",
+      "hue": 6.85,
+      "gs": 60.47,
+      "pantone_hex": "3c3535",
+      "pantone_name": "after-dark",
+      "cluster": [],
+      "group": 0,
+      "ref_category": "None",
+      "ref_name": "None"
+    },
+    {
+      "cluster_id": "112",
+      "cluster_size": 1080,
+      "cluster_size_rank": 212,
+      "rgb": [
+        186,
+        200,
+        207
+      ],
+      "hex": "#bac8cf",
+      "hue": 236.96,
+      "gs": 196.43,
+      "pantone_hex": "d2cfc4",
+      "pantone_name": "silver-birch",
+      "cluster": [],
+      "group": 11,
+      "ref_category": "Grey",
+      "ref_name": "LightSlateGray"
+    },
+    {
+      "cluster_id": "113",
+      "cluster_size": 1286,
+      "cluster_size_rank": 230,
+      "rgb": [
+        1,
+        90,
+        141
+      ],
+      "hex": "#015a8d",
+      "hue": 226.48,
+      "gs": 69.2,
+      "pantone_hex": "5d89b3",
+      "pantone_name": "lichen-blue",
+      "cluster": [],
+      "group": 0,
+      "ref_category": "None",
+      "ref_name": "None"
+    },
+    {
+      "cluster_id": "114",
+      "cluster_size": 663,
+      "cluster_size_rank": 141,
+      "rgb": [
+        121,
+        141,
+        136
+      ],
+      "hex": "#798d88",
+      "hue": 123.27,
+      "gs": 134.33,
+      "pantone_hex": "80817d",
+      "pantone_name": "moon-mist",
+      "cluster": [],
+      "group": 11,
+      "ref_category": "Grey",
+      "ref_name": "DimGray"
+    },
+    {
+      "cluster_id": "115",
+      "cluster_size": 542,
+      "cluster_size_rank": 112,
+      "rgb": [
+        4,
+        46,
+        62
+      ],
+      "hex": "#042e3e",
+      "hue": 231.95,
+      "gs": 35.26,
+      "pantone_hex": "e86800",
+      "pantone_name": "exuberance",
+      "cluster": [],
+      "group": 0,
+      "ref_category": "None",
+      "ref_name": "None"
+    },
+    {
+      "cluster_id": "116",
+      "cluster_size": 88,
+      "cluster_size_rank": 7,
+      "rgb": [
+        245,
+        176,
+        65
+      ],
+      "hex": "#f5b041",
+      "hue": 15.31,
+      "gs": 183.73,
+      "pantone_hex": "bdc6dc",
+      "pantone_name": "halogen-blue",
+      "cluster": [],
+      "group": 0,
+      "ref_category": "None",
+      "ref_name": "None"
+    },
+    {
+      "cluster_id": "117",
+      "cluster_size": 576,
+      "cluster_size_rank": 120,
+      "rgb": [
+        92,
+        110,
+        119
+      ],
+      "hex": "#5c6e77",
+      "hue": 236.17,
+      "gs": 105.55,
+      "pantone_hex": "646762",
+      "pantone_name": "castor-gray",
+      "cluster": [],
+      "group": 11,
+      "ref_category": "Grey",
+      "ref_name": "Black"
+    },
+    {
+      "cluster_id": "118",
+      "cluster_size": 1330,
+      "cluster_size_rank": 233,
+      "rgb": [
+        193,
+        197,
+        195
+      ],
+      "hex": "#c1c5c3",
+      "hue": 120.46,
+      "gs": 195.38,
+      "pantone_hex": "d2cfc4",
+      "pantone_name": "silver-birch",
+      "cluster": [],
+      "group": 11,
+      "ref_category": "Grey",
+      "ref_name": "LightSlateGray"
+    },
+    {
+      "cluster_id": "119",
+      "cluster_size": 1330,
+      "cluster_size_rank": 234,
+      "rgb": [
+        197,
+        185,
+        172
+      ],
+      "hex": "#c5b9ac",
+      "hue": 2.79,
+      "gs": 186.91,
+      "pantone_hex": "c1bcac",
+      "pantone_name": "pelican",
+      "cluster": [],
+      "group": 11,
+      "ref_category": "Grey",
+      "ref_name": "LightSlateGray"
+    },
+    {
+      "cluster_id": "120",
+      "cluster_size": 1103,
+      "cluster_size_rank": 214,
+      "rgb": [
+        232,
+        234,
+        232
+      ],
+      "hex": "#e8eae8",
+      "hue": 120.0,
+      "gs": 232.94,
+      "pantone_hex": "f2f0eb",
+      "pantone_name": "snow-white",
+      "cluster": [],
+      "group": 9,
+      "ref_category": "Purple",
+      "ref_name": "Plum"
+    },
+    {
+      "cluster_id": "121",
+      "cluster_size": 659,
+      "cluster_size_rank": 140,
+      "rgb": [
+        121,
+        165,
+        201
+      ],
+      "hex": "#79a5c9",
+      "hue": 232.12,
+      "gs": 155.83,
+      "pantone_hex": "7181a4",
+      "pantone_name": "english-manor",
+      "cluster": [],
+      "group": 0,
+      "ref_category": "None",
+      "ref_name": "None"
+    },
+    {
+      "cluster_id": "122",
+      "cluster_size": 511,
+      "cluster_size_rank": 106,
+      "rgb": [
+        153,
+        125,
+        108
+      ],
+      "hex": "#997d6c",
+      "hue": 3.4,
+      "gs": 131.28,
+      "pantone_hex": "8e7c71",
+      "pantone_name": "taupe-gray",
+      "cluster": [],
+      "group": 0,
+      "ref_category": "None",
+      "ref_name": "None"
+    },
+    {
+      "cluster_id": "123",
+      "cluster_size": 319,
+      "cluster_size_rank": 53,
+      "rgb": [
+        226,
+        179,
+        114
+      ],
+      "hex": "#e2b372",
+      "hue": 10.63,
+      "gs": 185.42,
+      "pantone_hex": "70a38d",
+      "pantone_name": "creme-de-menthe",
+      "cluster": [],
+      "group": 5,
+      "ref_category": "Brown",
+      "ref_name": "Burlywood"
+    },
+    {
+      "cluster_id": "124",
+      "cluster_size": 608,
+      "cluster_size_rank": 130,
+      "rgb": [
+        74,
+        132,
+        193
+      ],
+      "hex": "#4a84c1",
+      "hue": 230.7,
+      "gs": 121.54,
+      "pantone_hex": "c9d3dc",
+      "pantone_name": "illusion-blue",
+      "cluster": [],
+      "group": 8,
+      "ref_category": "Blue",
+      "ref_name": "RoyalBlue"
+    },
+    {
+      "cluster_id": "125",
+      "cluster_size": 554,
+      "cluster_size_rank": 113,
+      "rgb": [
+        177,
+        157,
+        137
+      ],
+      "hex": "#b19d89",
+      "hue": 4.07,
+      "gs": 160.52,
+      "pantone_hex": "ad9f93",
+      "pantone_name": "simply-taupe",
+      "cluster": [],
+      "group": 5,
+      "ref_category": "Brown",
+      "ref_name": "RosyBrown"
+    },
+    {
+      "cluster_id": "126",
+      "cluster_size": 363,
+      "cluster_size_rank": 66,
+      "rgb": [
+        41,
+        46,
+        22
+      ],
+      "hex": "#292e16",
+      "hue": 115.91,
+      "gs": 41.73,
+      "pantone_hex": "2f2d30",
+      "pantone_name": "moonless-night",
+      "cluster": [],
+      "group": 0,
+      "ref_category": "None",
+      "ref_name": "None"
+    },
+    {
+      "cluster_id": "127",
+      "cluster_size": 1189,
+      "cluster_size_rank": 218,
+      "rgb": [
+        159,
+        167,
+        172
+      ],
+      "hex": "#9fa7ac",
+      "hue": 238.21,
+      "gs": 165.02,
+      "pantone_hex": "b1b09f",
+      "pantone_name": "agate-gray",
+      "cluster": [],
+      "group": 11,
+      "ref_category": "Grey",
+      "ref_name": "Gray"
+    },
+    {
+      "cluster_id": "128",
+      "cluster_size": 374,
+      "cluster_size_rank": 71,
+      "rgb": [
+        118,
+        108,
+        139
+      ],
+      "hex": "#766c8b",
+      "hue": 242.1,
+      "gs": 114.41,
+      "pantone_hex": "82776b",
+      "pantone_name": "brindle",
+      "cluster": [],
+      "group": 11,
+      "ref_category": "Grey",
+      "ref_name": "DarkSlateGray"
+    },
+    {
+      "cluster_id": "129",
+      "cluster_size": 1078,
+      "cluster_size_rank": 211,
+      "rgb": [
+        102,
+        100,
+        104
+      ],
+      "hex": "#666468",
+      "hue": 240.46,
+      "gs": 100.95,
+      "pantone_hex": "776a5f",
+      "pantone_name": "walnut",
+      "cluster": [],
+      "group": 11,
+      "ref_category": "Grey",
+      "ref_name": "Black"
+    },
+    {
+      "cluster_id": "130",
+      "cluster_size": 727,
+      "cluster_size_rank": 159,
+      "rgb": [
+        134,
+        152,
+        170
+      ],
+      "hex": "#8698aa",
+      "hue": 236.29,
+      "gs": 148.54,
+      "pantone_hex": "989a98",
+      "pantone_name": "limestone",
+      "cluster": [],
+      "group": 11,
+      "ref_category": "Grey",
+      "ref_name": "SlateGray"
+    },
+    {
+      "cluster_id": "131",
+      "cluster_size": 1071,
+      "cluster_size_rank": 209,
+      "rgb": [
+        180,
+        191,
+        197
+      ],
+      "hex": "#b4bfc5",
+      "hue": 237.57,
+      "gs": 188.22,
+      "pantone_hex": "c1bcac",
+      "pantone_name": "pelican",
+      "cluster": [],
+      "group": 11,
+      "ref_category": "Grey",
+      "ref_name": "LightSlateGray"
+    },
+    {
+      "cluster_id": "132",
+      "cluster_size": 656,
+      "cluster_size_rank": 139,
+      "rgb": [
+        127,
+        163,
+        181
+      ],
+      "hex": "#7fa3b5",
+      "hue": 233.01,
+      "gs": 154.16,
+      "pantone_hex": "5a77a8",
+      "pantone_name": "blue-yonder",
+      "cluster": [],
+      "group": 0,
+      "ref_category": "None",
+      "ref_name": "None"
+    },
+    {
+      "cluster_id": "133",
+      "cluster_size": 298,
+      "cluster_size_rank": 47,
+      "rgb": [
+        56,
+        109,
+        103
+      ],
+      "hex": "#386d67",
+      "hue": 129.16,
+      "gs": 92.41,
+      "pantone_hex": "262c2a",
+      "pantone_name": "jet-set",
+      "cluster": [],
+      "group": 0,
+      "ref_category": "None",
+      "ref_name": "None"
+    },
+    {
+      "cluster_id": "134",
+      "cluster_size": 81,
+      "cluster_size_rank": 6,
+      "rgb": [
+        219,
+        152,
+        56
+      ],
+      "hex": "#db9838",
+      "hue": 13.78,
+      "gs": 160.87,
+      "pantone_hex": "d42e5b",
+      "pantone_name": "azalea",
+      "cluster": [],
+      "group": 5,
+      "ref_category": "Brown",
+      "ref_name": "Peru"
+    },
+    {
+      "cluster_id": "135",
+      "cluster_size": 289,
+      "cluster_size_rank": 44,
+      "rgb": [
+        222,
+        188,
+        143
+      ],
+      "hex": "#debc8f",
+      "hue": 8.08,
+      "gs": 192.81,
+      "pantone_hex": "dacbbe",
+      "pantone_name": "whisper-pink",
+      "cluster": [],
+      "group": 5,
+      "ref_category": "Brown",
+      "ref_name": "Burlywood"
+    },
+    {
+      "cluster_id": "136",
+      "cluster_size": 199,
+      "cluster_size_rank": 22,
+      "rgb": [
+        31,
+        133,
+        179
+      ],
+      "hex": "#1f85b3",
+      "hue": 224.81,
+      "gs": 107.72,
+      "pantone_hex": "486b67",
+      "pantone_name": "blue-spruce",
+      "cluster": [],
+      "group": 0,
+      "ref_category": "None",
+      "ref_name": "None"
+    },
+    {
+      "cluster_id": "137",
+      "cluster_size": 1124,
+      "cluster_size_rank": 216,
+      "rgb": [
+        217,
+        195,
+        172
+      ],
+      "hex": "#d9c3ac",
+      "hue": 4.6,
+      "gs": 198.74,
+      "pantone_hex": "d8cfb2",
+      "pantone_name": "frozen-dew",
+      "cluster": [],
+      "group": 0,
+      "ref_category": "None",
+      "ref_name": "None"
+    },
+    {
+      "cluster_id": "138",
+      "cluster_size": 124,
+      "cluster_size_rank": 9,
+      "rgb": [
+        222,
+        89,
+        2
+      ],
+      "hex": "#de5902",
+      "hue": 10.99,
+      "gs": 118.63,
+      "pantone_hex": null,
+      "pantone_name": null,
+      "cluster": [],
+      "group": 0,
+      "ref_category": "None",
+      "ref_name": "None"
+    },
+    {
+      "cluster_id": "139",
+      "cluster_size": 440,
+      "cluster_size_rank": 89,
+      "rgb": [
+        61,
+        111,
+        160
+      ],
+      "hex": "#3d6fa0",
+      "hue": 231.53,
+      "gs": 101.57,
+      "pantone_hex": "4c7e86",
+      "pantone_name": "brittany-blue",
+      "cluster": [],
+      "group": 8,
+      "ref_category": "Blue",
+      "ref_name": "RoyalBlue"
+    },
+    {
+      "cluster_id": "140",
+      "cluster_size": 586,
+      "cluster_size_rank": 123,
+      "rgb": [
+        126,
+        180,
+        214
+      ],
+      "hex": "#7eb4d6",
+      "hue": 230.55,
+      "gs": 167.6,
+      "pantone_hex": "7a1f3d",
+      "pantone_name": "beet-red",
+      "cluster": [],
+      "group": 0,
+      "ref_category": "None",
+      "ref_name": "None"
+    },
+    {
+      "cluster_id": "141",
+      "cluster_size": 196,
+      "cluster_size_rank": 20,
+      "rgb": [
+        188,
+        103,
+        102
+      ],
+      "hex": "#bc6766",
+      "hue": 0.18,
+      "gs": 128.11,
+      "pantone_hex": "bfa77f",
+      "pantone_name": "taos-taupe",
+      "cluster": [],
+      "group": 4,
+      "ref_category": "Red",
+      "ref_name": "IndianRed"
+    },
+    {
+      "cluster_id": "142",
+      "cluster_size": 494,
+      "cluster_size_rank": 101,
+      "rgb": [
+        250,
+        211,
+        190
+      ],
+      "hex": "#fad3be",
+      "hue": 4.0,
+      "gs": 220.02,
+      "pantone_hex": "edd2c0",
+      "pantone_name": "linen",
+      "cluster": [],
+      "group": 1,
+      "ref_category": "Yellow",
+      "ref_name": "PeachPuff"
+    },
+    {
+      "cluster_id": "143",
+      "cluster_size": 159,
+      "cluster_size_rank": 12,
+      "rgb": [
+        86,
+        89,
+        34
+      ],
+      "hex": "#565922",
+      "hue": 109.94,
+      "gs": 81.75,
+      "pantone_hex": "54392d",
+      "pantone_name": "potting-soil",
+      "cluster": [],
+      "group": 6,
+      "ref_category": "Green",
+      "ref_name": "DarkOliveGreen"
+    },
+    {
+      "cluster_id": "144",
+      "cluster_size": 944,
+      "cluster_size_rank": 196,
+      "rgb": [
+        211,
+        227,
+        234
+      ],
+      "hex": "#d3e3ea",
+      "hue": 236.55,
+      "gs": 222.8,
+      "pantone_hex": "e7e9e7",
+      "pantone_name": "blanc-de-blanc",
+      "cluster": [],
+      "group": 11,
+      "ref_category": "Grey",
+      "ref_name": "Silver"
+    },
+    {
+      "cluster_id": "145",
+      "cluster_size": 539,
+      "cluster_size_rank": 110,
+      "rgb": [
+        249,
+        228,
+        205
+      ],
+      "hex": "#f9e4cd",
+      "hue": 4.62,
+      "gs": 231.41,
+      "pantone_hex": "f3e0d6",
+      "pantone_name": "powder-puff",
+      "cluster": [],
+      "group": 5,
+      "ref_category": "Brown",
+      "ref_name": "BlanchedAlmond"
+    },
+    {
+      "cluster_id": "146",
+      "cluster_size": 1204,
+      "cluster_size_rank": 222,
+      "rgb": [
+        179,
+        210,
+        225
+      ],
+      "hex": "#b3d2e1",
+      "hue": 233.82,
+      "gs": 202.26,
+      "pantone_hex": "717f9b",
+      "pantone_name": "country-blue",
+      "cluster": [],
+      "group": 8,
+      "ref_category": "Blue",
+      "ref_name": "LightSteelBlue"
+    },
+    {
+      "cluster_id": "147",
+      "cluster_size": 540,
+      "cluster_size_rank": 111,
+      "rgb": [
+        40,
+        102,
+        131
+      ],
+      "hex": "#286683",
+      "hue": 229.25,
+      "gs": 86.73,
+      "pantone_hex": "1f5da0",
+      "pantone_name": "strong-blue",
+      "cluster": [],
+      "group": 0,
+      "ref_category": "None",
+      "ref_name": "None"
+    },
+    {
+      "cluster_id": "148",
+      "cluster_size": 439,
+      "cluster_size_rank": 88,
+      "rgb": [
+        253,
+        135,
+        1
+      ],
+      "hex": "#fd8701",
+      "hue": 15.86,
+      "gs": 154.75,
+      "pantone_hex": null,
+      "pantone_name": null,
+      "cluster": [],
+      "group": 2,
+      "ref_category": "Orange",
+      "ref_name": "DarkOrange"
+    },
+    {
+      "cluster_id": "149",
+      "cluster_size": 786,
+      "cluster_size_rank": 169,
+      "rgb": [
+        39,
+        29,
+        20
+      ],
+      "hex": "#271d14",
+      "hue": 1.97,
+      "gs": 30.93,
+      "pantone_hex": null,
+      "pantone_name": null,
+      "cluster": [],
+      "group": 0,
+      "ref_category": "None",
+      "ref_name": "None"
+    },
+    {
+      "cluster_id": "150",
+      "cluster_size": 355,
+      "cluster_size_rank": 64,
+      "rgb": [
+        121,
+        126,
+        175
+      ],
+      "hex": "#797eaf",
+      "hue": 239.03,
+      "gs": 129.97,
+      "pantone_hex": "a09998",
+      "pantone_name": "ash",
+      "cluster": [],
+      "group": 11,
+      "ref_category": "Grey",
+      "ref_name": "SlateGray"
+    },
+    {
+      "cluster_id": "151",
+      "cluster_size": 280,
+      "cluster_size_rank": 41,
+      "rgb": [
+        253,
+        181,
+        1
+      ],
+      "hex": "#fdb501",
+      "hue": 21.3,
+      "gs": 181.75,
+      "pantone_hex": null,
+      "pantone_name": null,
+      "cluster": [],
+      "group": 2,
+      "ref_category": "Orange",
+      "ref_name": "Orange"
+    },
+    {
+      "cluster_id": "152",
+      "cluster_size": 714,
+      "cluster_size_rank": 157,
+      "rgb": [
+        122,
+        141,
+        161
+      ],
+      "hex": "#7a8da1",
+      "hue": 236.12,
+      "gs": 137.48,
+      "pantone_hex": "a49e9e",
+      "pantone_name": "opal-gray",
+      "cluster": [],
+      "group": 11,
+      "ref_category": "Grey",
+      "ref_name": "SlateGray"
+    },
+    {
+      "cluster_id": "153",
+      "cluster_size": 292,
+      "cluster_size_rank": 46,
+      "rgb": [
+        30,
+        101,
+        94
+      ],
+      "hex": "#1e655e",
+      "hue": 131.78,
+      "gs": 78.94,
+      "pantone_hex": "262c2a",
+      "pantone_name": "jet-set",
+      "cluster": [],
+      "group": 0,
+      "ref_category": "None",
+      "ref_name": "None"
+    },
+    {
+      "cluster_id": "154",
+      "cluster_size": 348,
+      "cluster_size_rank": 60,
+      "rgb": [
+        249,
+        186,
+        165
+      ],
+      "hex": "#f9baa5",
+      "hue": 3.72,
+      "gs": 202.19,
+      "pantone_hex": "f2d8cd",
+      "pantone_name": "soft-pink",
+      "cluster": [],
+      "group": 3,
+      "ref_category": "Pink",
+      "ref_name": "LightPink"
+    },
+    {
+      "cluster_id": "155",
+      "cluster_size": 638,
+      "cluster_size_rank": 134,
+      "rgb": [
+        1,
+        35,
+        47
+      ],
+      "hex": "#01232f",
+      "hue": 233.22,
+      "gs": 26.2,
+      "pantone_hex": null,
+      "pantone_name": null,
+      "cluster": [],
+      "group": 0,
+      "ref_category": "None",
+      "ref_name": "None"
+    },
+    {
+      "cluster_id": "156",
+      "cluster_size": 767,
+      "cluster_size_rank": 162,
+      "rgb": [
+        222,
+        211,
+        225
+      ],
+      "hex": "#ded3e1",
+      "hue": 242.45,
+      "gs": 215.66,
+      "pantone_hex": "f1e8df",
+      "pantone_name": "gardenia",
+      "cluster": [],
+      "group": 11,
+      "ref_category": "Grey",
+      "ref_name": "Silver"
+    },
+    {
+      "cluster_id": "157",
+      "cluster_size": 1211,
+      "cluster_size_rank": 224,
+      "rgb": [
+        59,
+        75,
+        68
+      ],
+      "hex": "#3b4b44",
+      "hue": 121.99,
+      "gs": 69.36,
+      "pantone_hex": "4a4139",
+      "pantone_name": "wren",
+      "cluster": [],
+      "group": 10,
+      "ref_category": "White",
+      "ref_name": "White"
+    },
+    {
+      "cluster_id": "158",
+      "cluster_size": 721,
+      "cluster_size_rank": 158,
+      "rgb": [
+        135,
+        175,
+        184
+      ],
+      "hex": "#87afb8",
+      "hue": 232.11,
+      "gs": 163.93,
+      "pantone_hex": "7181a4",
+      "pantone_name": "english-manor",
+      "cluster": [],
+      "group": 0,
+      "ref_category": "None",
+      "ref_name": "None"
+    },
+    {
+      "cluster_id": "159",
+      "cluster_size": 1048,
+      "cluster_size_rank": 207,
+      "rgb": [
+        71,
+        66,
+        68
+      ],
+      "hex": "#474244",
+      "hue": 359,
+      "gs": 67.65,
+      "pantone_hex": "5f575c",
+      "pantone_name": "rabbit",
+      "cluster": [],
+      "group": 10,
+      "ref_category": "White",
+      "ref_name": "White"
+    },
+    {
+      "cluster_id": "160",
+      "cluster_size": 331,
+      "cluster_size_rank": 56,
+      "rgb": [
+        165,
+        153,
+        185
+      ],
+      "hex": "#a599b9",
+      "hue": 242.51,
+      "gs": 160.07,
+      "pantone_hex": "b1b09f",
+      "pantone_name": "agate-gray",
+      "cluster": [],
+      "group": 11,
+      "ref_category": "Grey",
+      "ref_name": "Gray"
+    },
+    {
+      "cluster_id": "161",
+      "cluster_size": 228,
+      "cluster_size_rank": 30,
+      "rgb": [
+        178,
+        113,
+        123
+      ],
+      "hex": "#b2717b",
+      "hue": 359,
+      "gs": 133.4,
+      "pantone_hex": "c5a582",
+      "pantone_name": "latte",
+      "cluster": [],
+      "group": 0,
+      "ref_category": "None",
+      "ref_name": "None"
+    },
+    {
+      "cluster_id": "162",
+      "cluster_size": 277,
+      "cluster_size_rank": 40,
+      "rgb": [
+        3,
+        125,
+        178
+      ],
+      "hex": "#037db2",
+      "hue": 222.98,
+      "gs": 94.56,
+      "pantone_hex": null,
+      "pantone_name": null,
+      "cluster": [],
+      "group": 0,
+      "ref_category": "None",
+      "ref_name": "None"
+    },
+    {
+      "cluster_id": "163",
+      "cluster_size": 779,
+      "cluster_size_rank": 165,
+      "rgb": [
+        117,
+        152,
+        176
+      ],
+      "hex": "#7598b0",
+      "hue": 233.31,
+      "gs": 144.15,
+      "pantone_hex": "5a77a8",
+      "pantone_name": "blue-yonder",
+      "cluster": [],
+      "group": 7,
+      "ref_category": "Cyan",
+      "ref_name": "CadetBlue"
+    },
+    {
+      "cluster_id": "164",
+      "cluster_size": 1194,
+      "cluster_size_rank": 220,
+      "rgb": [
+        181,
+        182,
+        177
+      ],
+      "hex": "#b5b6b1",
+      "hue": 119.08,
+      "gs": 180.95,
+      "pantone_hex": "c1bcac",
+      "pantone_name": "pelican",
+      "cluster": [],
+      "group": 11,
+      "ref_category": "Grey",
+      "ref_name": "Gray"
+    },
+    {
+      "cluster_id": "165",
+      "cluster_size": 554,
+      "cluster_size_rank": 114,
+      "rgb": [
+        121,
+        97,
+        78
+      ],
+      "hex": "#79614e",
+      "hue": 3.83,
+      "gs": 101.89,
+      "pantone_hex": "4a3f41",
+      "pantone_name": "shale",
+      "cluster": [],
+      "group": 0,
+      "ref_category": "None",
+      "ref_name": "None"
+    },
+    {
+      "cluster_id": "166",
+      "cluster_size": 60,
+      "cluster_size_rank": 4,
+      "rgb": [
+        63,
+        185,
+        226
+      ],
+      "hex": "#3fb9e2",
+      "hue": 222.49,
+      "gs": 153.13,
+      "pantone_hex": "433331",
+      "pantone_name": "java",
+      "cluster": [],
+      "group": 0,
+      "ref_category": "None",
+      "ref_name": "None"
+    },
+    {
+      "cluster_id": "167",
+      "cluster_size": 619,
+      "cluster_size_rank": 132,
+      "rgb": [
+        197,
+        174,
+        146
+      ],
+      "hex": "#c5ae92",
+      "hue": 5.49,
+      "gs": 177.49,
+      "pantone_hex": "9f8672",
+      "pantone_name": "amphora",
+      "cluster": [],
+      "group": 5,
+      "ref_category": "Brown",
+      "ref_name": "Tan"
+    },
+    {
+      "cluster_id": "168",
+      "cluster_size": 48,
+      "cluster_size_rank": 1,
+      "rgb": [
+        165,
+        60,
+        10
+      ],
+      "hex": "#a53c0a",
+      "hue": 7.32,
+      "gs": 85.53,
+      "pantone_hex": "b44e5d",
+      "pantone_name": "holly-berry",
+      "cluster": [],
+      "group": 5,
+      "ref_category": "Brown",
+      "ref_name": "SaddleBrown"
+    },
+    {
+      "cluster_id": "169",
+      "cluster_size": 706,
+      "cluster_size_rank": 154,
+      "rgb": [
+        30,
+        18,
+        10
+      ],
+      "hex": "#1e120a",
+      "hue": 1.75,
+      "gs": 20.65,
+      "pantone_hex": null,
+      "pantone_name": null,
+      "cluster": [],
+      "group": 0,
+      "ref_category": "None",
+      "ref_name": "None"
+    },
+    {
+      "cluster_id": "170",
+      "cluster_size": 49,
+      "cluster_size_rank": 2,
+      "rgb": [
+        160,
+        75,
+        60
+      ],
+      "hex": "#a04b3c",
+      "hue": 2.54,
+      "gs": 98.55,
+      "pantone_hex": "a17249",
+      "pantone_name": "brown-sugar",
+      "cluster": [],
+      "group": 5,
+      "ref_category": "Brown",
+      "ref_name": "Sienna"
+    },
+    {
+      "cluster_id": "171",
+      "cluster_size": 415,
+      "cluster_size_rank": 82,
+      "rgb": [
+        94,
+        166,
+        178
+      ],
+      "hex": "#5ea6b2",
+      "hue": 227.26,
+      "gs": 145.75,
+      "pantone_hex": "86a1a9",
+      "pantone_name": "tourmaline",
+      "cluster": [],
+      "group": 7,
+      "ref_category": "Cyan",
+      "ref_name": "CadetBlue"
+    },
+    {
+      "cluster_id": "172",
+      "cluster_size": 257,
+      "cluster_size_rank": 37,
+      "rgb": [
+        1,
+        123,
+        145
+      ],
+      "hex": "#017b91",
+      "hue": 221.65,
+      "gs": 89.03,
+      "pantone_hex": "478589",
+      "pantone_name": "teal",
+      "cluster": [],
+      "group": 7,
+      "ref_category": "Cyan",
+      "ref_name": "DarkCyan"
+    },
+    {
+      "cluster_id": "173",
+      "cluster_size": 405,
+      "cluster_size_rank": 81,
+      "rgb": [
+        94,
+        108,
+        139
+      ],
+      "hex": "#5e6c8b",
+      "hue": 237.2,
+      "gs": 107.25,
+      "pantone_hex": "8e918f",
+      "pantone_name": "neutral-gray",
+      "cluster": [],
+      "group": 11,
+      "ref_category": "Grey",
+      "ref_name": "DarkSlateGray"
+    },
+    {
+      "cluster_id": "174",
+      "cluster_size": 289,
+      "cluster_size_rank": 45,
+      "rgb": [
+        98,
+        51,
+        33
+      ],
+      "hex": "#623321",
+      "hue": 3.38,
+      "gs": 62.9,
+      "pantone_hex": "7e5c54",
+      "pantone_name": "nutmeg",
+      "cluster": [],
+      "group": 0,
+      "ref_category": "None",
+      "ref_name": "None"
+    },
+    {
+      "cluster_id": "175",
+      "cluster_size": 691,
+      "cluster_size_rank": 151,
+      "rgb": [
+        40,
+        50,
+        59
+      ],
+      "hex": "#28323b",
+      "hue": 237.81,
+      "gs": 48.0,
+      "pantone_hex": "3b3a36",
+      "pantone_name": "peat",
+      "cluster": [],
+      "group": 0,
+      "ref_category": "None",
+      "ref_name": "None"
+    },
+    {
+      "cluster_id": "176",
+      "cluster_size": 139,
+      "cluster_size_rank": 11,
+      "rgb": [
+        7,
+        154,
+        207
+      ],
+      "hex": "#079acf",
+      "hue": 220.62,
+      "gs": 116.08,
+      "pantone_hex": null,
+      "pantone_name": null,
+      "cluster": [],
+      "group": 0,
+      "ref_category": "None",
+      "ref_name": "None"
+    },
+    {
+      "cluster_id": "177",
+      "cluster_size": 786,
+      "cluster_size_rank": 170,
+      "rgb": [
+        59,
+        50,
+        41
+      ],
+      "hex": "#3b3229",
+      "hue": 1.98,
+      "gs": 51.61,
+      "pantone_hex": "3b3a36",
+      "pantone_name": "peat",
+      "cluster": [],
+      "group": 0,
+      "ref_category": "None",
+      "ref_name": "None"
+    },
+    {
+      "cluster_id": "178",
+      "cluster_size": 1614,
+      "cluster_size_rank": 241,
+      "rgb": [
+        206,
+        210,
+        220
+      ],
+      "hex": "#ced2dc",
+      "hue": 239.11,
+      "gs": 209.74,
+      "pantone_hex": "e1dbc8",
+      "pantone_name": "white-asparagus",
+      "cluster": [],
+      "group": 11,
+      "ref_category": "Grey",
+      "ref_name": "DarkGray"
+    },
+    {
+      "cluster_id": "179",
+      "cluster_size": 2078,
+      "cluster_size_rank": 248,
+      "rgb": [
+        190,
+        209,
+        220
+      ],
+      "hex": "#bed1dc",
+      "hue": 236.0,
+      "gs": 204.38,
+      "pantone_hex": "d2d8d2",
+      "pantone_name": "murmur",
+      "cluster": [],
+      "group": 8,
+      "ref_category": "Blue",
+      "ref_name": "LightSkyBlue"
+    },
+    {
+      "cluster_id": "180",
+      "cluster_size": 404,
+      "cluster_size_rank": 79,
+      "rgb": [
+        96,
+        131,
+        158
+      ],
+      "hex": "#60839e",
+      "hue": 233.38,
+      "gs": 123.52,
+      "pantone_hex": "8c9cc1",
+      "pantone_name": "lavender-lustre",
+      "cluster": [],
+      "group": 11,
+      "ref_category": "Grey",
+      "ref_name": "DarkSlateGray"
+    },
+    {
+      "cluster_id": "181",
+      "cluster_size": 909,
+      "cluster_size_rank": 192,
+      "rgb": [
+        120,
+        117,
+        117
+      ],
+      "hex": "#787575",
+      "hue": 360,
+      "gs": 117.78,
+      "pantone_hex": "80765f",
+      "pantone_name": "covert-green",
+      "cluster": [],
+      "group": 11,
+      "ref_category": "Grey",
+      "ref_name": "DimGray"
+    },
+    {
+      "cluster_id": "182",
+      "cluster_size": 491,
+      "cluster_size_rank": 100,
+      "rgb": [
+        99,
+        70,
+        47
+      ],
+      "hex": "#63462f",
+      "hue": 4.5,
+      "gs": 75.95,
+      "pantone_hex": "625b5c",
+      "pantone_name": "plum-kitten",
+      "cluster": [],
+      "group": 0,
+      "ref_category": "None",
+      "ref_name": "None"
+    },
+    {
+      "cluster_id": "183",
+      "cluster_size": 571,
+      "cluster_size_rank": 118,
+      "rgb": [
+        158,
+        193,
+        195
+      ],
+      "hex": "#9ec1c3",
+      "hue": 232.81,
+      "gs": 182.6,
+      "pantone_hex": "897f98",
+      "pantone_name": "dusk",
+      "cluster": [],
+      "group": 0,
+      "ref_category": "None",
+      "ref_name": "None"
+    },
+    {
+      "cluster_id": "184",
+      "cluster_size": 575,
+      "cluster_size_rank": 119,
+      "rgb": [
+        244,
+        226,
+        231
+      ],
+      "hex": "#f4e2e7",
+      "hue": 359,
+      "gs": 231.71,
+      "pantone_hex": "f2f0eb",
+      "pantone_name": "snow-white",
+      "cluster": [],
+      "group": 9,
+      "ref_category": "Purple",
+      "ref_name": "Thistle"
+    },
+    {
+      "cluster_id": "185",
+      "cluster_size": 799,
+      "cluster_size_rank": 176,
+      "rgb": [
+        8,
+        17,
+        32
+      ],
+      "hex": "#081120",
+      "hue": 238.06,
+      "gs": 16.01,
+      "pantone_hex": null,
+      "pantone_name": null,
+      "cluster": [],
+      "group": 0,
+      "ref_category": "None",
+      "ref_name": "None"
+    },
+    {
+      "cluster_id": "186",
+      "cluster_size": 381,
+      "cluster_size_rank": 75,
+      "rgb": [
+        167,
+        102,
+        137
+      ],
+      "hex": "#a76689",
+      "hue": 359,
+      "gs": 125.26,
+      "pantone_hex": "9c8e7b",
+      "pantone_name": "chinchilla",
+      "cluster": [],
+      "group": 0,
+      "ref_category": "None",
+      "ref_name": "None"
+    },
+    {
+      "cluster_id": "187",
+      "cluster_size": 423,
+      "cluster_size_rank": 84,
+      "rgb": [
+        59,
+        130,
+        156
+      ],
+      "hex": "#3b829c",
+      "hue": 227.9,
+      "gs": 111.68,
+      "pantone_hex": "8a9992",
+      "pantone_name": "green-milieu",
+      "cluster": [],
+      "group": 8,
+      "ref_category": "Blue",
+      "ref_name": "RoyalBlue"
+    },
+    {
+      "cluster_id": "188",
+      "cluster_size": 1088,
+      "cluster_size_rank": 213,
+      "rgb": [
+        210,
+        211,
+        205
+      ],
+      "hex": "#d2d3cd",
+      "hue": 118.85,
+      "gs": 209.81,
+      "pantone_hex": "e1dbc8",
+      "pantone_name": "white-asparagus",
+      "cluster": [],
+      "group": 11,
+      "ref_category": "Grey",
+      "ref_name": "DarkGray"
+    },
+    {
+      "cluster_id": "189",
+      "cluster_size": 352,
+      "cluster_size_rank": 61,
+      "rgb": [
+        136,
+        196,
+        236
+      ],
+      "hex": "#88c4ec",
+      "hue": 229.86,
+      "gs": 182.48,
+      "pantone_hex": "d1d5d0",
+      "pantone_name": "foggy-dew",
+      "cluster": [],
+      "group": 8,
+      "ref_category": "Blue",
+      "ref_name": "CornflowerBlue"
+    },
+    {
+      "cluster_id": "190",
+      "cluster_size": 604,
+      "cluster_size_rank": 128,
+      "rgb": [
+        50,
+        75,
+        100
+      ],
+      "hex": "#324b64",
+      "hue": 235.08,
+      "gs": 70.33,
+      "pantone_hex": "5f5e62",
+      "pantone_name": "castlerock",
+      "cluster": [],
+      "group": 10,
+      "ref_category": "White",
+      "ref_name": "White"
+    },
+    {
+      "cluster_id": "191",
+      "cluster_size": 679,
+      "cluster_size_rank": 149,
+      "rgb": [
+        228,
+        214,
+        197
+      ],
+      "hex": "#e4d6c5",
+      "hue": 3.57,
+      "gs": 216.02,
+      "pantone_hex": "ddd5c7",
+      "pantone_name": "birch",
+      "cluster": [],
+      "group": 11,
+      "ref_category": "Grey",
+      "ref_name": "DarkGray"
+    },
+    {
+      "cluster_id": "192",
+      "cluster_size": 34,
+      "cluster_size_rank": 0,
+      "rgb": [
+        246,
+        121,
+        77
+      ],
+      "hex": "#f6794d",
+      "hue": 6.23,
+      "gs": 153.11,
+      "pantone_hex": "f3774d",
+      "pantone_name": "coral-rose",
+      "cluster": [],
+      "group": 2,
+      "ref_category": "Orange",
+      "ref_name": "Coral"
+    },
+    {
+      "cluster_id": "193",
+      "cluster_size": 878,
+      "cluster_size_rank": 182,
+      "rgb": [
+        76,
+        76,
+        77
+      ],
+      "hex": "#4c4c4d",
+      "hue": 240.0,
+      "gs": 76.04,
+      "pantone_hex": "5f5e62",
+      "pantone_name": "castlerock",
+      "cluster": [],
+      "group": 10,
+      "ref_category": "White",
+      "ref_name": "White"
+    },
+    {
+      "cluster_id": "194",
+      "cluster_size": 226,
+      "cluster_size_rank": 29,
+      "rgb": [
+        156,
+        154,
+        117
+      ],
+      "hex": "#9c9a75",
+      "hue": 7.55,
+      "gs": 150.22,
+      "pantone_hex": "947764",
+      "pantone_name": "burro",
+      "cluster": [],
+      "group": 0,
+      "ref_category": "None",
+      "ref_name": "None"
+    },
+    {
+      "cluster_id": "195",
+      "cluster_size": 648,
+      "cluster_size_rank": 137,
+      "rgb": [
+        201,
+        230,
+        244
+      ],
+      "hex": "#c9e6f4",
+      "hue": 234.16,
+      "gs": 222.72,
+      "pantone_hex": "d8e8e6",
+      "pantone_name": "hint-of-mint",
+      "cluster": [],
+      "group": 7,
+      "ref_category": "Cyan",
+      "ref_name": "Aquamarine"
+    },
+    {
+      "cluster_id": "196",
+      "cluster_size": 373,
+      "cluster_size_rank": 70,
+      "rgb": [
+        186,
+        169,
+        189
+      ],
+      "hex": "#baa9bd",
+      "hue": 243.71,
+      "gs": 176.18,
+      "pantone_hex": "d0c5b1",
+      "pantone_name": "fog",
+      "cluster": [],
+      "group": 11,
+      "ref_category": "Grey",
+      "ref_name": "LightSlateGray"
+    },
+    {
+      "cluster_id": "197",
+      "cluster_size": 698,
+      "cluster_size_rank": 153,
+      "rgb": [
+        142,
+        145,
+        153
+      ],
+      "hex": "#8e9199",
+      "hue": 239.32,
+      "gs": 144.87,
+      "pantone_hex": "9a927f",
+      "pantone_name": "seneca-rock",
+      "cluster": [],
+      "group": 11,
+      "ref_category": "Grey",
+      "ref_name": "SlateGray"
+    },
+    {
+      "cluster_id": "198",
+      "cluster_size": 287,
+      "cluster_size_rank": 43,
+      "rgb": [
+        86,
+        93,
+        153
+      ],
+      "hex": "#565d99",
+      "hue": 238.7,
+      "gs": 97.66,
+      "pantone_hex": "8e918f",
+      "pantone_name": "neutral-gray",
+      "cluster": [],
+      "group": 0,
+      "ref_category": "None",
+      "ref_name": "None"
+    },
+    {
+      "cluster_id": "199",
+      "cluster_size": 355,
+      "cluster_size_rank": 63,
+      "rgb": [
+        250,
+        230,
+        184
+      ],
+      "hex": "#fae6b8",
+      "hue": 8.6,
+      "gs": 230.49,
+      "pantone_hex": "f9c2cd",
+      "pantone_name": "rose-shadow",
+      "cluster": [],
+      "group": 1,
+      "ref_category": "Yellow",
+      "ref_name": "Moccasin"
+    },
+    {
+      "cluster_id": "200",
+      "cluster_size": 933,
+      "cluster_size_rank": 195,
+      "rgb": [
+        161,
+        183,
+        177
+      ],
+      "hex": "#a1b7b1",
+      "hue": 123.47,
+      "gs": 175.58,
+      "pantone_hex": "aeb2b5",
+      "pantone_name": "high-rise",
+      "cluster": [],
+      "group": 11,
+      "ref_category": "Grey",
+      "ref_name": "Gray"
+    },
+    {
+      "cluster_id": "201",
+      "cluster_size": 785,
+      "cluster_size_rank": 168,
+      "rgb": [
+        218,
+        206,
+        186
+      ],
+      "hex": "#daceba",
+      "hue": 4.18,
+      "gs": 207.09,
+      "pantone_hex": "d2cfc4",
+      "pantone_name": "silver-birch",
+      "cluster": [],
+      "group": 11,
+      "ref_category": "Grey",
+      "ref_name": "DarkGray"
+    },
+    {
+      "cluster_id": "202",
+      "cluster_size": 166,
+      "cluster_size_rank": 13,
+      "rgb": [
+        84,
+        37,
+        17
+      ],
+      "hex": "#542511",
+      "hue": 3.73,
+      "gs": 48.69,
+      "pantone_hex": "64242e",
+      "pantone_name": "cabernet",
+      "cluster": [],
+      "group": 0,
+      "ref_category": "None",
+      "ref_name": "None"
+    },
+    {
+      "cluster_id": "203",
+      "cluster_size": 673,
+      "cluster_size_rank": 146,
+      "rgb": [
+        61,
+        92,
+        123
+      ],
+      "hex": "#3d5c7b",
+      "hue": 234.13,
+      "gs": 86.2,
+      "pantone_hex": "66648b",
+      "pantone_name": "twilight-purple",
+      "cluster": [],
+      "group": 0,
+      "ref_category": "None",
+      "ref_name": "None"
+    },
+    {
+      "cluster_id": "204",
+      "cluster_size": 238,
+      "cluster_size_rank": 33,
+      "rgb": [
+        32,
+        57,
+        105
+      ],
+      "hex": "#203969",
+      "hue": 235.43,
+      "gs": 54.96,
+      "pantone_hex": "a3b4c4",
+      "pantone_name": "celestial-blue",
+      "cluster": [],
+      "group": 0,
+      "ref_category": "None",
+      "ref_name": "None"
+    },
+    {
+      "cluster_id": "205",
+      "cluster_size": 474,
+      "cluster_size_rank": 97,
+      "rgb": [
+        85,
+        153,
+        166
+      ],
+      "hex": "#5599a6",
+      "hue": 227.86,
+      "gs": 134.06,
+      "pantone_hex": "384c67",
+      "pantone_name": "ensign-blue",
+      "cluster": [],
+      "group": 7,
+      "ref_category": "Cyan",
+      "ref_name": "CadetBlue"
+    },
+    {
+      "cluster_id": "206",
+      "cluster_size": 880,
+      "cluster_size_rank": 185,
+      "rgb": [
+        106,
+        98,
+        91
+      ],
+      "hex": "#6a625b",
+      "hue": 1.56,
+      "gs": 99.49,
+      "pantone_hex": "776a5f",
+      "pantone_name": "walnut",
+      "cluster": [],
+      "group": 11,
+      "ref_category": "Grey",
+      "ref_name": "Black"
+    },
+    {
+      "cluster_id": "207",
+      "cluster_size": 565,
+      "cluster_size_rank": 117,
+      "rgb": [
+        106,
+        154,
+        196
+      ],
+      "hex": "#6a9ac4",
+      "hue": 231.65,
+      "gs": 144.33,
+      "pantone_hex": "77333b",
+      "pantone_name": "ruby-wine",
+      "cluster": [],
+      "group": 0,
+      "ref_category": "None",
+      "ref_name": "None"
+    },
+    {
+      "cluster_id": "208",
+      "cluster_size": 136,
+      "cluster_size_rank": 10,
+      "rgb": [
+        163,
+        90,
+        97
+      ],
+      "hex": "#a35a61",
+      "hue": 359,
+      "gs": 112.46,
+      "pantone_hex": "988467",
+      "pantone_name": "kelp",
+      "cluster": [],
+      "group": 0,
+      "ref_category": "None",
+      "ref_name": "None"
+    },
+    {
+      "cluster_id": "209",
+      "cluster_size": 203,
+      "cluster_size_rank": 23,
+      "rgb": [
+        228,
+        125,
+        115
+      ],
+      "hex": "#e47d73",
+      "hue": 1.63,
+      "gs": 154.43,
+      "pantone_hex": "fadc53",
+      "pantone_name": "marigold",
+      "cluster": [],
+      "group": 4,
+      "ref_category": "Red",
+      "ref_name": "LightCoral"
+    },
+    {
+      "cluster_id": "210",
+      "cluster_size": 222,
+      "cluster_size_rank": 28,
+      "rgb": [
+        216,
+        163,
+        88
+      ],
+      "hex": "#d8a358",
+      "hue": 11.75,
+      "gs": 170.08,
+      "pantone_hex": "d99938",
+      "pantone_name": "golden-glow",
+      "cluster": [],
+      "group": 5,
+      "ref_category": "Brown",
+      "ref_name": "SandyBrown"
+    },
+    {
+      "cluster_id": "211",
+      "cluster_size": 355,
+      "cluster_size_rank": 62,
+      "rgb": [
+        0,
+        137,
+        161
+      ],
+      "hex": "#0089a1",
+      "hue": 220.24,
+      "gs": 98.77,
+      "pantone_hex": "19187",
+      "pantone_name": "Nifty Turquoise",
+      "cluster": [],
+      "group": 7,
+      "ref_category": "Cyan",
+      "ref_name": "DarkCyan"
+    },
+    {
+      "cluster_id": "212",
+      "cluster_size": 190,
+      "cluster_size_rank": 17,
+      "rgb": [
+        251,
+        222,
+        166
+      ],
+      "hex": "#fbdea6",
+      "hue": 9.88,
+      "gs": 224.04,
+      "pantone_hex": "f9c2cd",
+      "pantone_name": "rose-shadow",
+      "cluster": [],
+      "group": 5,
+      "ref_category": "Brown",
+      "ref_name": "NavajoWhite"
+    },
+    {
+      "cluster_id": "213",
+      "cluster_size": 795,
+      "cluster_size_rank": 172,
+      "rgb": [
+        137,
+        163,
+        157
+      ],
+      "hex": "#89a39d",
+      "hue": 124.27,
+      "gs": 154.41,
+      "pantone_hex": "989a98",
+      "pantone_name": "limestone",
+      "cluster": [],
+      "group": 6,
+      "ref_category": "Green",
+      "ref_name": "DarkSeaGreen"
+    },
+    {
+      "cluster_id": "214",
+      "cluster_size": 1192,
+      "cluster_size_rank": 219,
+      "rgb": [
+        206,
+        201,
+        193
+      ],
+      "hex": "#cec9c1",
+      "hue": 1.79,
+      "gs": 201.38,
+      "pantone_hex": "d7d0c0",
+      "pantone_name": "bone-white",
+      "cluster": [],
+      "group": 11,
+      "ref_category": "Grey",
+      "ref_name": "LightSlateGray"
+    },
+    {
+      "cluster_id": "215",
+      "cluster_size": 502,
+      "cluster_size_rank": 105,
+      "rgb": [
+        139,
+        108,
+        88
+      ],
+      "hex": "#8b6c58",
+      "hue": 3.92,
+      "gs": 114.85,
+      "pantone_hex": "a0714f",
+      "pantone_name": "lion",
+      "cluster": [],
+      "group": 0,
+      "ref_category": "None",
+      "ref_name": "None"
+    },
+    {
+      "cluster_id": "216",
+      "cluster_size": 819,
+      "cluster_size_rank": 178,
+      "rgb": [
+        237,
+        234,
+        217
+      ],
+      "hex": "#edead9",
+      "hue": 3.71,
+      "gs": 232.72,
+      "pantone_hex": "f2f0eb",
+      "pantone_name": "snow-white",
+      "cluster": [],
+      "group": 9,
+      "ref_category": "Purple",
+      "ref_name": "Lavender"
+    },
+    {
+      "cluster_id": "217",
+      "cluster_size": 495,
+      "cluster_size_rank": 102,
+      "rgb": [
+        204,
+        185,
+        198
+      ],
+      "hex": "#ccb9c6",
+      "hue": 359,
+      "gs": 191.96,
+      "pantone_hex": "d7d0c0",
+      "pantone_name": "bone-white",
+      "cluster": [],
+      "group": 11,
+      "ref_category": "Grey",
+      "ref_name": "LightSlateGray"
+    },
+    {
+      "cluster_id": "218",
+      "cluster_size": 908,
+      "cluster_size_rank": 191,
+      "rgb": [
+        134,
+        134,
+        140
+      ],
+      "hex": "#86868c",
+      "hue": 240.0,
+      "gs": 134.55,
+      "pantone_hex": "9c8e7b",
+      "pantone_name": "chinchilla",
+      "cluster": [],
+      "group": 11,
+      "ref_category": "Grey",
+      "ref_name": "DimGray"
+    },
+    {
+      "cluster_id": "219",
+      "cluster_size": 284,
+      "cluster_size_rank": 42,
+      "rgb": [
+        41,
+        95,
+        154
+      ],
+      "hex": "#295f9a",
+      "hue": 231.2,
+      "gs": 85.54,
+      "pantone_hex": "95a69f",
+      "pantone_name": "jadeite",
+      "cluster": [],
+      "group": 0,
+      "ref_category": "None",
+      "ref_name": "None"
+    },
+    {
+      "cluster_id": "220",
+      "cluster_size": 882,
+      "cluster_size_rank": 186,
+      "rgb": [
+        121,
+        126,
+        130
+      ],
+      "hex": "#797e82",
+      "hue": 238.86,
+      "gs": 124.84,
+      "pantone_hex": "8d8070",
+      "pantone_name": "timber-wolf",
+      "cluster": [],
+      "group": 11,
+      "ref_category": "Grey",
+      "ref_name": "DimGray"
+    },
+    {
+      "cluster_id": "221",
+      "cluster_size": 902,
+      "cluster_size_rank": 190,
+      "rgb": [
+        15,
+        15,
+        11
+      ],
+      "hex": "#0f0f0b",
+      "hue": 0.93,
+      "gs": 14.53,
+      "pantone_hex": null,
+      "pantone_name": null,
+      "cluster": [],
+      "group": 10,
+      "ref_category": "White",
+      "ref_name": "Ivory"
+    },
+    {
+      "cluster_id": "222",
+      "cluster_size": 308,
+      "cluster_size_rank": 51,
+      "rgb": [
+        97,
+        157,
+        223
+      ],
+      "hex": "#619ddf",
+      "hue": 230.55,
+      "gs": 146.49,
+      "pantone_hex": "77333b",
+      "pantone_name": "ruby-wine",
+      "cluster": [],
+      "group": 8,
+      "ref_category": "Blue",
+      "ref_name": "DeepSkyBlue"
+    },
+    {
+      "cluster_id": "223",
+      "cluster_size": 598,
+      "cluster_size_rank": 126,
+      "rgb": [
+        164,
+        144,
+        129
+      ],
+      "hex": "#a49081",
+      "hue": 3.1,
+      "gs": 148.11,
+      "pantone_hex": "a59788",
+      "pantone_name": "tuffet",
+      "cluster": [],
+      "group": 5,
+      "ref_category": "Brown",
+      "ref_name": "RosyBrown"
+    },
+    {
+      "cluster_id": "224",
+      "cluster_size": 671,
+      "cluster_size_rank": 144,
+      "rgb": [
+        104,
+        121,
+        135
+      ],
+      "hex": "#687987",
+      "hue": 236.43,
+      "gs": 117.41,
+      "pantone_hex": "8e918f",
+      "pantone_name": "neutral-gray",
+      "cluster": [],
+      "group": 11,
+      "ref_category": "Grey",
+      "ref_name": "DarkSlateGray"
+    },
+    {
+      "cluster_id": "225",
+      "cluster_size": 459,
+      "cluster_size_rank": 94,
+      "rgb": [
+        77,
+        102,
+        132
+      ],
+      "hex": "#4d6684",
+      "hue": 235.16,
+      "gs": 97.87,
+      "pantone_hex": "66648b",
+      "pantone_name": "twilight-purple",
+      "cluster": [],
+      "group": 0,
+      "ref_category": "None",
+      "ref_name": "None"
+    },
+    {
+      "cluster_id": "226",
+      "cluster_size": 843,
+      "cluster_size_rank": 180,
+      "rgb": [
+        145,
+        163,
+        182
+      ],
+      "hex": "#91a3b6",
+      "hue": 236.3,
+      "gs": 159.64,
+      "pantone_hex": "cac5c2",
+      "pantone_name": "wind-chime",
+      "cluster": [],
+      "group": 11,
+      "ref_category": "Grey",
+      "ref_name": "Gray"
+    },
+    {
+      "cluster_id": "227",
+      "cluster_size": 822,
+      "cluster_size_rank": 179,
+      "rgb": [
+        149,
+        179,
+        186
+      ],
+      "hex": "#95b3ba",
+      "hue": 233.84,
+      "gs": 170.68,
+      "pantone_hex": "a9afaa",
+      "pantone_name": "pigeon",
+      "cluster": [],
+      "group": 11,
+      "ref_category": "Grey",
+      "ref_name": "Gray"
+    },
+    {
+      "cluster_id": "228",
+      "cluster_size": 557,
+      "cluster_size_rank": 115,
+      "rgb": [
+        148,
+        193,
+        221
+      ],
+      "hex": "#94c1dd",
+      "hue": 231.77,
+      "gs": 182.59,
+      "pantone_hex": "bdb369",
+      "pantone_name": "golden-green",
+      "cluster": [],
+      "group": 8,
+      "ref_category": "Blue",
+      "ref_name": "CornflowerBlue"
+    },
+    {
+      "cluster_id": "229",
+      "cluster_size": 401,
+      "cluster_size_rank": 78,
+      "rgb": [
+        94,
+        87,
+        126
+      ],
+      "hex": "#5e577e",
+      "hue": 241.43,
+      "gs": 93.44,
+      "pantone_hex": "686d6c",
+      "pantone_name": "sedona-sage",
+      "cluster": [],
+      "group": 11,
+      "ref_category": "Grey",
+      "ref_name": "Black"
+    },
+    {
+      "cluster_id": "230",
+      "cluster_size": 945,
+      "cluster_size_rank": 197,
+      "rgb": [
+        52,
+        51,
+        52
+      ],
+      "hex": "#343334",
+      "hue": 359,
+      "gs": 51.36,
+      "pantone_hex": "44413c",
+      "pantone_name": "black-ink",
+      "cluster": [],
+      "group": 0,
+      "ref_category": "None",
+      "ref_name": "None"
+    },
+    {
+      "cluster_id": "231",
+      "cluster_size": 266,
+      "cluster_size_rank": 38,
+      "rgb": [
+        137,
+        110,
+        153
+      ],
+      "hex": "#896e99",
+      "hue": 245.44,
+      "gs": 122.84,
+      "pantone_hex": "918c7e",
+      "pantone_name": "laurel-oak",
+      "cluster": [],
+      "group": 0,
+      "ref_category": "None",
+      "ref_name": "None"
+    },
+    {
+      "cluster_id": "232",
+      "cluster_size": 796,
+      "cluster_size_rank": 174,
+      "rgb": [
+        48,
+        119,
+        170
+      ],
+      "hex": "#3077aa",
+      "hue": 228.7,
+      "gs": 103.54,
+      "pantone_hex": "486b67",
+      "pantone_name": "blue-spruce",
+      "cluster": [],
+      "group": 8,
+      "ref_category": "Blue",
+      "ref_name": "RoyalBlue"
+    },
+    {
+      "cluster_id": "233",
+      "cluster_size": 891,
+      "cluster_size_rank": 189,
+      "rgb": [
+        147,
+        183,
+        207
+      ],
+      "hex": "#93b7cf",
+      "hue": 233.14,
+      "gs": 174.82,
+      "pantone_hex": "7181a4",
+      "pantone_name": "english-manor",
+      "cluster": [],
+      "group": 0,
+      "ref_category": "None",
+      "ref_name": "None"
+    },
+    {
+      "cluster_id": "234",
+      "cluster_size": 886,
+      "cluster_size_rank": 187,
+      "rgb": [
+        158,
+        153,
+        148
+      ],
+      "hex": "#9e9994",
+      "hue": 1.13,
+      "gs": 153.77,
+      "pantone_hex": "aea393",
+      "pantone_name": "plaza-taupe",
+      "cluster": [],
+      "group": 11,
+      "ref_category": "Grey",
+      "ref_name": "Gray"
+    },
+    {
+      "cluster_id": "235",
+      "cluster_size": 564,
+      "cluster_size_rank": 116,
+      "rgb": [
+        103,
+        81,
+        61
+      ],
+      "hex": "#67513d",
+      "hue": 4.04,
+      "gs": 85.19,
+      "pantone_hex": "5b5149",
+      "pantone_name": "major-brown",
+      "cluster": [],
+      "group": 0,
+      "ref_category": "None",
+      "ref_name": "None"
+    },
+    {
+      "cluster_id": "236",
+      "cluster_size": 602,
+      "cluster_size_rank": 127,
+      "rgb": [
+        250,
+        235,
+        219
+      ],
+      "hex": "#faebdb",
+      "hue": 3.36,
+      "gs": 237.41,
+      "pantone_hex": "f2f0eb",
+      "pantone_name": "snow-white",
+      "cluster": [],
+      "group": 9,
+      "ref_category": "Purple",
+      "ref_name": "Lavender"
+    },
+    {
+      "cluster_id": "237",
+      "cluster_size": 305,
+      "cluster_size_rank": 49,
+      "rgb": [
+        103,
+        112,
+        166
+      ],
+      "hex": "#6770a6",
+      "hue": 238.3,
+      "gs": 115.36,
+      "pantone_hex": "8e918f",
+      "pantone_name": "neutral-gray",
+      "cluster": [],
+      "group": 11,
+      "ref_category": "Grey",
+      "ref_name": "DarkSlateGray"
+    },
+    {
+      "cluster_id": "238",
+      "cluster_size": 1756,
+      "cluster_size_rank": 246,
+      "rgb": [
+        223,
+        225,
+        226
+      ],
+      "hex": "#dfe1e2",
+      "hue": 239.53,
+      "gs": 224.29,
+      "pantone_hex": "f0eee9",
+      "pantone_name": "cloud-dancer",
+      "cluster": [],
+      "group": 11,
+      "ref_category": "Grey",
+      "ref_name": "Silver"
+    },
+    {
+      "cluster_id": "239",
+      "cluster_size": 233,
+      "cluster_size_rank": 32,
+      "rgb": [
+        139,
+        136,
+        100
+      ],
+      "hex": "#8b8864",
+      "hue": 7.35,
+      "gs": 132.65,
+      "pantone_hex": "b68f52",
+      "pantone_name": "honey-mustard",
+      "cluster": [],
+      "group": 0,
+      "ref_category": "None",
+      "ref_name": "None"
+    },
+    {
+      "cluster_id": "240",
+      "cluster_size": 502,
+      "cluster_size_rank": 103,
+      "rgb": [
+        0,
+        63,
+        124
+      ],
+      "hex": "#003f7c",
+      "hue": 230.03,
+      "gs": 51.12,
+      "pantone_hex": "988088",
+      "pantone_name": "toadstool",
+      "cluster": [],
+      "group": 0,
+      "ref_category": "None",
+      "ref_name": "None"
+    },
+    {
+      "cluster_id": "241",
+      "cluster_size": 926,
+      "cluster_size_rank": 194,
+      "rgb": [
+        172,
+        183,
+        189
+      ],
+      "hex": "#acb7bd",
+      "hue": 237.57,
+      "gs": 180.22,
+      "pantone_hex": "c1bcac",
+      "pantone_name": "pelican",
+      "cluster": [],
+      "group": 11,
+      "ref_category": "Grey",
+      "ref_name": "LightSlateGray"
+    },
+    {
+      "cluster_id": "242",
+      "cluster_size": 167,
+      "cluster_size_rank": 14,
+      "rgb": [
+        126,
+        64,
+        41
+      ],
+      "hex": "#7e4029",
+      "hue": 4.06,
+      "gs": 79.79,
+      "pantone_hex": "6e493a",
+      "pantone_name": "friar-brown",
+      "cluster": [],
+      "group": 5,
+      "ref_category": "Brown",
+      "ref_name": "SaddleBrown"
+    },
+    {
+      "cluster_id": "243",
+      "cluster_size": 375,
+      "cluster_size_rank": 73,
+      "rgb": [
+        117,
+        84,
+        143
+      ],
+      "hex": "#75548f",
+      "hue": 246.31,
+      "gs": 100.48,
+      "pantone_hex": "8e918f",
+      "pantone_name": "neutral-gray",
+      "cluster": [],
+      "group": 0,
+      "ref_category": "None",
+      "ref_name": "None"
+    },
+    {
+      "cluster_id": "244",
+      "cluster_size": 189,
+      "cluster_size_rank": 16,
+      "rgb": [
+        65,
+        156,
+        174
+      ],
+      "hex": "#419cae",
+      "hue": 225.0,
+      "gs": 130.78,
+      "pantone_hex": "c9d3dc",
+      "pantone_name": "illusion-blue",
+      "cluster": [],
+      "group": 8,
+      "ref_category": "Blue",
+      "ref_name": "RoyalBlue"
+    },
+    {
+      "cluster_id": "245",
+      "cluster_size": 770,
+      "cluster_size_rank": 163,
+      "rgb": [
+        52,
+        39,
+        31
+      ],
+      "hex": "#34271f",
+      "hue": 1.74,
+      "gs": 41.92,
+      "pantone_hex": "39373b",
+      "pantone_name": "phantom",
+      "cluster": [],
+      "group": 0,
+      "ref_category": "None",
+      "ref_name": "None"
+    },
+    {
+      "cluster_id": "246",
+      "cluster_size": 450,
+      "cluster_size_rank": 92,
+      "rgb": [
+        26,
+        41,
+        49
+      ],
+      "hex": "#1a2931",
+      "hue": 236.76,
+      "gs": 37.4,
+      "pantone_hex": "2b2c30",
+      "pantone_name": "stretch-limo",
+      "cluster": [],
+      "group": 0,
+      "ref_category": "None",
+      "ref_name": "None"
+    },
+    {
+      "cluster_id": "247",
+      "cluster_size": 1680,
+      "cluster_size_rank": 242,
+      "rgb": [
+        249,
+        251,
+        250
+      ],
+      "hex": "#f9fbfa",
+      "hue": 120.23,
+      "gs": 250.04,
+      "pantone_hex": "f2f0eb",
+      "pantone_name": "snow-white",
+      "cluster": [],
+      "group": 10,
+      "ref_category": "White",
+      "ref_name": "FloralWhite"
+    },
+    {
+      "cluster_id": "248",
+      "cluster_size": 207,
+      "cluster_size_rank": 24,
+      "rgb": [
+        46,
+        148,
+        192
+      ],
+      "hex": "#2e94c0",
+      "hue": 224.74,
+      "gs": 122.47,
+      "pantone_hex": "484a72",
+      "pantone_name": "skipper-blue",
+      "cluster": [],
+      "group": 0,
+      "ref_category": "None",
+      "ref_name": "None"
+    },
+    {
+      "cluster_id": "249",
+      "cluster_size": 363,
+      "cluster_size_rank": 67,
+      "rgb": [
+        106,
+        67,
+        104
+      ],
+      "hex": "#6a4368",
+      "hue": 359,
+      "gs": 82.77,
+      "pantone_hex": "696156",
+      "pantone_name": "bungee-cord",
+      "cluster": [],
+      "group": 0,
+      "ref_category": "None",
+      "ref_name": "None"
+    }
+  ]
+}
