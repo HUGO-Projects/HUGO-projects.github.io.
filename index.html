@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Responsive Iframes</title>
+    <style>
+        /* General styling */
+        body {
+            background: #000000;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Clear float to prevent wrapping */
+        .clear {
+            clear: both;
+        }
+
+        @media (max-width: 4000px) {
+            .iframe-container {
+                max-width: 100%;
+            }
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr; /* Two columns for first two iframes */
+            height: 1000px;
+        }
+
+        .iframe-container:nth-child(3) {
+            grid-column: 1 / span 2; /* Span two columns for the third iframe */
+            width: 100%; /* Full width for the third iframe */
+        }
+
+        .iframe-container {
+            width: 100%; /* Default to 100% width */
+            height: 1000px;
+            border: none; /* Remove iframe borders */
+        }
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+        <iframe class="iframe-container" src="../src/imagespace.html"></iframe>
+        <iframe class="iframe-container" src="../src/colorspace.html"></iframe>
+        <iframe class="iframe-container" src="../src/palletViz.html"></iframe>
+    </div>
+</body>
+</html>
