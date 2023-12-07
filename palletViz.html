@@ -1,11 +1,17 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Color Palette </title>
+    <title>Color Palette</title>
     <script src="https://d3js.org/d3.v4.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/holtzy/D3-graph-gallery@master/LIB/d3-scale-radial.js"></script>
     <style>
-        body {background: #000000;}
+        body {
+            background: #1e1e1e;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            color: white;
+        }
 
         .tooltip {
             position: absolute;
@@ -19,338 +25,445 @@
             border-radius: 6px;
         }
 
-        #pallet-container {
-			position: absolute;
-			top: 0;
-			left: 0;
-			right: 0;
-			bottom: 0;
-			z-index: 1;
-		}
+        #info {
+            width: 50%;
+            margin: 10px;
+            font-size: 20px;
+        }
 
-        .selected {
-            fill: yellow;
+        #info_desc {
+            width: 50%;
+            margin: 10px;
+            font-size: 14px;
+        }
+
+        .pallet-container {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            margin-top: 20px;
+            padding: 10px;
+        }
+
+        .slider-container {
+            display: flex;
+            align-items: center;
+            width: 80%;
+            margin-bottom: 10px;
+        }
+
+        .slider {
+            flex: 1;
+        }
+
+        #slider1 {
+            order: 1; /* To specify the order of the first slider */
+        }
+
+        #slider2 {
+            order: 2; /* To specify the order of the second slider */
+        }
+
+        #download-link-container {
+            margin-bottom: 10px;
+        }
+
+        #downloadButton {
+            padding: 10px;
+            background-color: #7c7c7c;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        #dataviz {
+            width: 100%;
         }
 
     </style>
-</head>
-<body>
+    </head>
+    <body>
+        <div id="info">Color Pallet Generator</div>
+        <div id="info_desc">
+            This tool displays colors found in the sampled images. Each color is quantified by how frequency the color appears across the sampled images.<br>
+            Colors have been mapped to their most similar Pantone color so they can be sourced from commercial color libraries.<br> 
+            <br>
+            Sliders: Use the sliders to filter colors by their level of dominance in the pallet (how often the color appeared in the sampled images)<br>
+            Hover: Hover over a bar or dot with your mouse to see the name and hex code of the color.<br>
+            Selection: To add the color to your pallet, click on the bar or dot.<br>
+            Download: When you are ready to download the pallet, click the "Download Selected Colors" button.
+        </div>
+        <div class="pallet-container">
+            <div id="download-link-container"></div>
+            <div class="slider-container">
+                <label for="slider1">Range Filters:</label>
+                <input type="range" class="slider" id="slider1" min="0" max="255" value="0" step="10">
+                <input type="range" class="slider" id="slider2" min="0" max="255" value="255" step="10">
+            </div>
+            <button id="downloadButton">Download Selected Colors</button>
+            <div id="dataviz"></div>
+        </div>
+        <script>
+            var width = screen.width
+            var height = 1000
 
-<div class="pallet-container">
-    <input type="range" class="slider" id="slider1" min="0" max="255" value="0" step="1">
-    <input type="range" class="slider" id="slider2" min="0" max="255" value="255" step="1">
-    <div id="download-link-container"></div>
-    <button id="downloadButton">Download Selected Colors</button>
-    <div id="dataviz"></div>
-</div>
+            var tooltip = d3.select("body").append("div")
+                .style("opacity", 0)
+                .attr("id", "tooltip")
+                .attr("class", "tooltip")
+                .attr('style', 'position: absolute; opacity: 0;');
 
-</div>
-<script>
-    var width = screen.width
-    var height = 1000
+            // append the svg object to the body of the page
+            var svg = d3.select("#dataviz")
+                .append("svg")
+                    .attr("width", width)
+                    .attr("height", height)
 
-    var tooltip = d3.select("body").append("div")
-        .style("opacity", 0)
-        .attr("id", "tooltip")
-        .attr("class", "tooltip")
-        .attr('style', 'position: absolute; opacity: 0;');
+            let slider1 = d3.select("#slider1");
+            let slider2 = d3.select("#slider2");
 
-    // append the svg object to the body of the page
-    var svg = d3.select("#dataviz")
-        .append("svg")
-            .attr("width", width)
-            .attr("height", height)
+            const selected_colors = [];
+            const pallete_output = {};
 
-    let slider1 = d3.select("#slider1");
-    let slider2 = d3.select("#slider2");
-
-    /*function filterData(data,sliderValue) {
-        let filteredData = data.colors.filter(d => d.cluster_size >= sliderValue);
-        updateVisualization(filteredData,+d3.select("#slider1").property("value"),);
-    }*/
-    
-    function filterData(data, minValue, maxValue) {
-        let filteredData = data.colors.filter(d => d.cluster_size_rank >= minValue && d.cluster_size_rank <= maxValue);
-        updateVisualization(filteredData, minValue);
-    }
-
-    function updateVisualization(filteredData, sliderValue) {
-        svg.selectAll("*").remove();
-        
-        const pallete_output = {};
-        d3.select("#downloadButton").on("click", function() {
-            //button.on("click", () => {
-            svg.selectAll("*").each(function() {
-                if (d3.select(this).attr("clicks") % 2 !== 0){
-                    pallete_output[d3.select(this).attr("id")] = {
-                        "RGB":d3.select(this).attr("rgb"),
-                        "Hue":d3.select(this).attr("hue"),
-                        "Greyscale":d3.select(this).attr("gs"),
-                        "Cluster Size":d3.select(this).attr("cluster_size"),
-                        "Cluster Rank":d3.select(this).attr("cluster_rank"),
-                        "Similar Pantone Color Name":d3.select(this).attr("pantone_name"),
-                        "Similar Pantone Color Hex":d3.select(this).attr("pantone"),
-                    }
-                }
-            });
-            console.log(pallete_output);
-            const jsonString = JSON.stringify(pallete_output, null, 2);
-            const blob = new Blob([jsonString], { type: 'application/json' });
-            const url = URL.createObjectURL(blob);
-            const link = document.createElement('a');
-            link.href = url;
-            link.download = 'Selected_Colors.json';
-            link.click();
-            URL.revokeObjectURL(url);
-        });
-
-        var hues = [];
-        var cluster_size = [];
-        var cluster_size_ranks = [];
-        filteredData.forEach(function(item) {
-            hues.push(item.hue)
-            cluster_size.push(item.cluster_size)
-            cluster_size_ranks.push(item.cluster_size_rank)
-        });
-        var datalength = cluster_size_ranks.length;
-        console.log(datalength);
-        var min_hue = d3.min(hues);
-        var max_hue = d3.max(hues);
-        var min_cluster_size = d3.min(cluster_size);
-        var max_cluster_size = d3.max(cluster_size);
-
-        var min_cluster_rank = d3.min(cluster_size_ranks);
-        var max_cluster_rank = d3.max(cluster_size_ranks);
-
-        var xScale_dots = d3.scaleLinear()
-            .domain([0, 255])
-            .range([width*.5, width*.8]);
-
-        var yScale_dots = d3.scaleLinear()
-            .domain([min_cluster_rank, max_cluster_rank])
-            .range([height*.8, 100]);
-
-        var xScale_bars = d3.scaleLinear()
-            .domain([min_cluster_size, max_cluster_size])
-            .range([100, width*.2]);
-
-        var yScale_bars = d3.scaleLinear()
-            .domain([min_cluster_rank, max_cluster_rank])
-            .range([height*.8, 100]);
-
-        /*svg.append("text")
-            .attr("x", 20) // Adjust x-coordinate for positioning
-            .attr("y", 20) // Adjust y-coordinate for positioning
-            .attr("text-anchor", "start")
-            .style("fill", "white")
-            .style("font-family", "Arial")
-            .style("font-size", 25)
-            .text("Palette dominance: " + sliderValue + "+% of palette");*/
-        var node = svg.append("g")
-            .selectAll("circle")
-            .data(filteredData)
-            .enter()
-            .append("circle")
-                .attr("clicks",0)
-                .attr("id",function(d) { return d.hex; })
-                .attr("ref_category",function(d) { return d.ref_category; })
-                .attr("ref_name",function(d) { return d.ref_name; })
-                .attr("pantone_name",function(d) { return d.pantone_name; })
-                .attr("rgb",function(d) { return d.rgb; })
-                .attr("r",function(d) { return (d.cluster_size)*0.01; })
-                .attr("cx", width*.2)
-                .attr("cy", height*.5)
-                //.style("fill", function(d) { return d.hex; })
-                .style("fill", function(d) {return `rgb(${parseFloat(d.rgb[0])}, ${parseFloat(d.rgb[1])}, ${parseFloat(d.rgb[2])})`; })
-                .style("fill-opacity", 0.9)
-                .attr("stroke", function(d) {return `rgb(${parseFloat(d.rgb[0])}, ${parseFloat(d.rgb[1])}, ${parseFloat(d.rgb[2])})`; })
-                .style("stroke-width", 1)
-                .call(d3.drag() // call specific function when circle is dragged
-                    .on("start", dragstarted)
-                    .on("drag", dragged)
-                    .on("end", dragended));
-
-        node.on("mouseover", function(d) {
-            d3.select(this)
-                .raise()
-                .transition()
-                .duration(200)
-                .style("fill-opacity", 1)
-                .attr("r",function(d) { return ((d.cluster_size)*0.01)*1.5; })
-                tooltip
-                    .style("left", (d3.select(this).attr("cx")) + "px")
-                    .style("top", (d3.select(this).attr("cy")) + "px")
-                    .style("width", function() {return (200) + "px"})
-                    .style('opacity', .8)
-                    .text(d3.select(this).attr("id")+": "+d3.select(this).attr("pantone_name")+": "+d3.select(this).attr("ref_name"));
-                });
-
-        node.on("mouseout", function(d) {
-            d3.select(this)
-                .raise()
-                .transition()
-                .duration(200)
-                .style("fill-opacity", 0.9)
-                .attr("r",function(d) { return (d.cluster_size)*0.01; })
-            tooltip
-                .transition()
-                .duration(200)
-                .style('opacity', 0);
-        });
-
-        node.on("click", function(d) {
-            let clicks = parseFloat(d3.select(this).attr("clicks"));
-            d3.select(this)
-                .attr("clicks",clicks += 1);
-            if (parseFloat(d3.select(this).attr("clicks")) % 2 !== 0){
-                d3.select(this)
-                    .attr("stroke", "white")
-                    .style("stroke-width", 5);
-                console.log(d3.select(this).attr("ref_name"))
-            } else if (parseFloat(d3.select(this).attr("clicks")) % 2 === 0){
-                d3.select(this)
-                    .style("stroke-width", 1);
-            };
-        });
-
-        // Features of the forces applied to the nodes:
-        var simulation = d3.forceSimulation()
-            .force("x", d3.forceX().strength(.005).x( function(d){ return xScale_dots(d.hue)} ))
-            .force("y", d3.forceY().strength(.0015).y( height/2 ))
-            .force("center", d3.forceCenter().x(width*.65).y(height / 2)) // Attraction to the center of the svg area
-            .force("charge", d3.forceManyBody().strength(.02)) // Nodes are attracted one each other of value is > 0
-            .force("collide", d3.forceCollide().strength(.03).radius(5).iterations(3)) // Force that avoids circle overlapping
-
-        simulation
-            .nodes(filteredData)
-            .on("tick", function(d){
-            node
-                .attr("cx", function(d){ return d.x; })
-                .attr("cy", function(d){ return d.y; })
-            });
-
-        // What happens when a circle is dragged?
-        function dragstarted(d) {
-            if (!d3.event.active) simulation.alphaTarget().restart();
-            d.fx = d.x;
-            d.fy = d.y;
-        }
-
-        function dragged(d) {
-            d.fx = d3.event.x;
-            d.fy = d3.event.y;
-        }
-
-        function dragended(d) {
-            if (!d3.event.active) simulation.alphaTarget();
-            d.fx = null;
-            d.fy = null;
+            function filterData(data, minValue, maxValue) {
+                let filteredData = data.colors.filter(d => d.cluster_size_rank >= minValue && d.cluster_size_rank <= maxValue);
+                updateVisualization(filteredData, minValue);
             }
 
-        svg.selectAll("text")
-            .data(filteredData)
-            .enter()
-            .append("text")
-                .attr("x", function(d) { return xScale_bars(d.cluster_size + 3); })
-                .attr("y", function(d) { return yScale_bars(d.cluster_size_rank - .3);})
-                .attr("text-anchor", "start")
-                .style("fill", "white")
-                .style("font-family", "Arial")
-                .style("font-size", (height/datalength)*.4)
-                .text(d => `HEX: ${d.hex}, Pantone Name: ${d.pantone_name}`);
+            function updateVisualization(filteredData, sliderValue) {
+                svg.selectAll("*").each(function() {
+                    if (d3.select(this).attr("clicks") % 2 !== 0){
+                        if (selected_colors.includes(d3.select(this).attr("id"))){
+                            console.log(d3.select(this).attr("id"))
+                        }else{
+                            selected_colors.push(d3.select(this).attr("id"))
+                            pallete_output[d3.select(this).attr("id")] = {
+                                "RGB":d3.select(this).attr("rgb"),
+                                "Hue":d3.select(this).attr("hue"),
+                                "Greyscale":d3.select(this).attr("gs"),
+                                "Cluster Size":d3.select(this).attr("cluster_size"),
+                                "Cluster Rank":d3.select(this).attr("cluster_rank"),
+                                "Similar Pantone Color Name":d3.select(this).attr("pantone_name"),
+                                "Similar Pantone Color Hex":d3.select(this).attr("pantone")
+                            }
+                        }
+                    }
+                });
 
-        var paths = svg.append("g")
-            .selectAll("line")
-            .data(filteredData)
-            .enter()
-            .append("line")
-                .attr("clicks",0)
-                .attr("rgb",function(d) { return d.rgb;})
-                .attr("hue",function(d) { return d.hue;})
-                .attr("gs",function(d) { return d.gs;})
-                .attr("cluster_size",function(d) { return d.cluster_size;})
-                .attr("cluster_rank",function(d) { return d.cluster_size_rank;})
-                .attr("y1",  function(d) { return yScale_bars(d.cluster_size_rank);})
-                .attr("y2",  function(d) { return yScale_bars(d.cluster_size_rank);})
-                //.attr("x2", function(d) { return xScale_bars((d.cluster_size-min_cluster_size)/(max_cluster_size-min_cluster_size)); })
-                .attr("x2", function(d) { return xScale_bars(d.cluster_size); })
-                .attr("x1", 100)
-                .attr("stroke", function(d) {return `rgb(${parseFloat(d.rgb[0])}, ${parseFloat(d.rgb[1])}, ${parseFloat(d.rgb[2])})`; })
-                .style("stroke-width", (height/datalength)*.7)
-                .style("stroke-opacity", 0.7)
-                .attr("id",function(d) { return d.hex; })
-                .attr("ref_category",function(d) { return d.ref_category; })
-                .attr("ref_name",function(d) { return d.ref_name; })
-                .attr("pantone_name",function(d) { return d.pantone_name; });
+                svg.selectAll("*").remove();
+                
+                //const pallete_output = {};
+                d3.select("#downloadButton").on("click", function() {
+                    //button.on("click", () => {
+                    svg.selectAll("*").each(function() {
+                        if (d3.select(this).attr("clicks") % 2 !== 0){
+                            pallete_output[d3.select(this).attr("id")] = {
+                                "RGB":d3.select(this).attr("rgb"),
+                                "Hue":d3.select(this).attr("hue"),
+                                "Greyscale":d3.select(this).attr("gs"),
+                                "Cluster Size":d3.select(this).attr("cluster_size"),
+                                "Cluster Rank":d3.select(this).attr("cluster_rank"),
+                                "Similar Pantone Color Name":d3.select(this).attr("pantone_name"),
+                                "Similar Pantone Color Hex":d3.select(this).attr("pantone_hex"),
+                            }
+                        }
+                    });
 
-        paths.on("mouseover", function(d) {
-            d3.select(this)
-                .raise()
-                .transition()
-                .duration(200)
-                .style("stroke-opacity", 1)
-                .style("stroke-width", (height/datalength)*.85)
-                tooltip
-                    .style("left", (d3.select(this).attr("x1")) + "px")
-                    .style("top", (d3.select(this).attr("y1")) + "px")
-                    .style("width", function() {return (200) + "px"})
-                    .style("stroke-opacity", 1)
-                    .text(d3.select(this).attr("id")+": "+d3.select(this).attr("pantone_name")+": "+d3.select(this).attr("ref_name"));
-        });
+                    console.log(pallete_output);
+                    const jsonString = JSON.stringify(pallete_output, null, 2);
+                    //const csvOutput = convertJSONtoCSV(data)
+                    const blob = new Blob([jsonString], { type: 'application/json' });
+                    const url = URL.createObjectURL(blob);
+                    const link = document.createElement('a');
+                    link.href = url;
+                    link.download = 'Selected_Colors.json';
+                    link.click();
+                    URL.revokeObjectURL(url);
+                });
 
-        paths.on("mouseout", function(d) {
-            d3.select(this)
-                .raise()
-                .transition()
-                .duration(200)
-                .style("stroke-opacity", 0.7)
-                .style("stroke-width", (height/datalength)*.7)
-            tooltip
-                .transition()
-                .duration(200)
-                .style('opacity', 0);
-        });
-        paths.on("click", function(d) {
-            let clicks = parseFloat(d3.select(this).attr("clicks"));
-            d3.select(this)
-                .attr("clicks",clicks += 1);
-            if (parseFloat(d3.select(this).attr("clicks")) % 2 !== 0){
-                d3.select(this)
-                    .style("stroke-opacity", 1)
-                console.log(d3.select(this).attr("ref_name"))
-            } else if (parseFloat(d3.select(this).attr("clicks")) % 2 === 0){
-                d3.select(this)
-                    .style("stroke-opacity", 0.7)
+                svg.append("text")
+                    .attr("x", 100)
+                    .attr("y", 50)
+                    .attr("text-anchor", "start")
+                    .style("fill", "white")
+                    .style("font-family", "Arial")
+                    .style("font-size", 25)
+                    .text("Pallet Colors - Sorted by pallet dominance ");
+
+                svg.append("text")
+                    .attr("x", width*.6)
+                    .attr("y", 50)
+                    .attr("text-anchor", "start")
+                    .style("fill", "white")
+                    .style("font-family", "Arial")
+                    .style("font-size", 25)
+                    .text("Pallet Colors - Sorted by hue ");
+
+                var hues = [];
+                var cluster_size = [];
+                var cluster_size_ranks = [];
+                filteredData.forEach(function(item) {
+                    hues.push(item.hue)
+                    cluster_size.push(item.cluster_size)
+                    cluster_size_ranks.push(item.cluster_size_rank)
+                });
+                var datalength = cluster_size_ranks.length;
+                console.log(datalength);
+                var min_hue = d3.min(hues);
+                var max_hue = d3.max(hues);
+                var min_cluster_size = d3.min(cluster_size);
+                var max_cluster_size = d3.max(cluster_size);
+
+                var min_cluster_rank = d3.min(cluster_size_ranks);
+                var max_cluster_rank = d3.max(cluster_size_ranks);
+
+                var xScale_dots = d3.scaleLinear()
+                    .domain([0, 255])
+                    .range([width*.5, width*.8]);
+
+                var yScale_dots = d3.scaleLinear()
+                    .domain([min_cluster_rank, max_cluster_rank])
+                    .range([height*.8, 100]);
+
+                var xScale_bars = d3.scaleLinear()
+                    .domain([min_cluster_size, max_cluster_size])
+                    .range([100, width*.5]);
+
+                var yScale_bars = d3.scaleLinear()
+                    .domain([min_cluster_rank, max_cluster_rank])
+                    .range([height*.8, 100]);
+
+                /*svg.append("text")
+                    .attr("x", 20) // Adjust x-coordinate for positioning
+                    .attr("y", 20) // Adjust y-coordinate for positioning
+                    .attr("text-anchor", "start")
+                    .style("fill", "white")
+                    .style("font-family", "Arial")
+                    .style("font-size", 25)
+                    .text("Palette dominance: " + sliderValue + "+% of palette");*/
+
+                var node = svg.append("g")
+                    .selectAll("circle")
+                    .data(filteredData)
+                    .enter()
+                    .append("circle")
+                        .attr("clicks",0)
+                        .attr("id",function(d) { return d.hex; })
+                        .attr("hue",function(d) { return d.hue; })
+                        .attr("ref_category",function(d) { return d.ref_category; })
+                        .attr("ref_name",function(d) { return d.ref_name; })
+                        .attr("pantone_name",function(d) { return d.pantone_name; })
+                        .attr("pantone_hex",function(d) { return d.pantone_hex; })
+                        .attr("cluster_size",function(d) { return d.cluster_size;})
+                        .attr("cluster_rank",function(d) { return d.cluster_size_rank;})
+                        .attr("rgb",function(d) { return d.rgb; })
+                        .attr("r",function(d) { return (d.cluster_size)*0.01; })
+                        .attr("cx", width*.2)
+                        .attr("cy", height*.5)
+                        //.style("fill", function(d) { return d.hex; })
+                        .style("fill", function(d) {return `rgb(${parseFloat(d.rgb[0])}, ${parseFloat(d.rgb[1])}, ${parseFloat(d.rgb[2])})`; })
+                        .style("fill-opacity", 0.7)
+                        .attr("stroke", function(d) {return `rgb(${parseFloat(d.rgb[0])}, ${parseFloat(d.rgb[1])}, ${parseFloat(d.rgb[2])})`; })
+                        .style("stroke-width", 1)
+                        .call(d3.drag() // call specific function when circle is dragged
+                            .on("start", dragstarted)
+                            .on("drag", dragged)
+                            .on("end", dragended));
+
+                node.on("mouseover", function(d) {
+                    d3.select(this)
+                        .raise()
+                        .transition()
+                        .duration(200)
+                        .style("fill-opacity", 1)
+                        .attr("r",function(d) { return ((d.cluster_size)*0.01)*1.5; })
+                        tooltip
+                            .style("left", (d3.select(this).attr("cx")) + "px")
+                            .style("top", (d3.select(this).attr("cy")) + "px")
+                            .style("width", function() {return (200) + "px"})
+                            .style('opacity', .8)
+                            .text(d3.select(this).attr("id")+": "+d3.select(this).attr("pantone_name")+": "+d3.select(this).attr("ref_name"));
+                        });
+
+                node.on("mouseout", function(d) {
+                    d3.select(this)
+                        .raise()
+                        .transition()
+                        .duration(200)
+                        .style("fill-opacity", 0.7)
+                        .attr("r",function(d) { return (d.cluster_size)*0.01; })
+                    tooltip
+                        .transition()
+                        .duration(200)
+                        .style('opacity', 0);
+                });
+
+                node.on("click", function(d) {
+                    let clicks = parseFloat(d3.select(this).attr("clicks"));
+                    d3.select(this)
+                        .attr("clicks",clicks += 1);
+                    if (parseFloat(d3.select(this).attr("clicks")) % 2 !== 0){
+                        d3.select(this)
+                            .attr("stroke", "white")
+                            .style("stroke-width", 5);
+                        console.log(d3.select(this).attr("ref_name"))
+                    } else if (parseFloat(d3.select(this).attr("clicks")) % 2 === 0){
+                        d3.select(this)
+                            .style("stroke-width", 1);
+                    };
+                });
+
+                // Features of the forces applied to the nodes:
+                var simulation = d3.forceSimulation()
+                    .force("x", d3.forceX().strength(.005).x( function(d){ return xScale_dots(d.hue)} ))
+                    .force("y", d3.forceY().strength(.0015).y( height/2 ))
+                    .force("center", d3.forceCenter().x(width*.65).y(height / 2)) // Attraction to the center of the svg area
+                    .force("charge", d3.forceManyBody().strength(.02)) // Nodes are attracted one each other of value is > 0
+                    .force("collide", d3.forceCollide().strength(.03).radius(5).iterations(3)) // Force that avoids circle overlapping
+
+                simulation
+                    .nodes(filteredData)
+                    .on("tick", function(d){
+                    node
+                        .attr("cx", function(d){ return d.x; })
+                        .attr("cy", function(d){ return d.y; })
+                    });
+
+                // What happens when a circle is dragged?
+                function dragstarted(d) {
+                    if (!d3.event.active) simulation.alphaTarget().restart();
+                    d.fx = d.x;
+                    d.fy = d.y;
+                }
+
+                function dragged(d) {
+                    d.fx = d3.event.x;
+                    d.fy = d3.event.y;
+                }
+
+                function dragended(d) {
+                    if (!d3.event.active) simulation.alphaTarget(.01);
+                    d.fx = null;
+                    d.fy = null;
+                }
+
+                svg.selectAll("circle").each(function (d, i) {
+                    if (selected_colors.includes(d3.select(this).attr("id"))){
+                        let clicks = parseFloat(d3.select(this).attr("clicks"));
+                        d3.select(this)
+                            .attr("clicks",clicks += 1)
+                            .attr("stroke", "white")
+                            .style("stroke-width", 5);
+                    };
+
+                });
+
+                svg.selectAll("text")
+                    .data(filteredData)
+                    .enter()
+                    .append("text")
+                        .attr("x", function(d) { return xScale_bars(d.cluster_size + 3); })
+                        .attr("y", function(d) { return yScale_bars(d.cluster_size_rank - .3);})
+                        .attr("text-anchor", "start")
+                        .style("fill", "white")
+                        .style("font-family", "Arial")
+                        .style("font-size", (height/datalength)*.4)
+                        .text(d => `HEX: ${d.hex}, Pantone Name: ${d.pantone_name}`);
+
+                var paths = svg.append("g")
+                    .selectAll("line")
+                    .data(filteredData)
+                    .enter()
+                    .append("line")
+                        .attr("clicks",0)
+                        .attr("rgb",function(d) { return d.rgb;})
+                        .attr("hue",function(d) { return d.hue;})
+                        .attr("gs",function(d) { return d.gs;})
+                        .attr("hue",function(d) { return d.hue; })
+                        .attr("cluster_size",function(d) { return d.cluster_size;})
+                        .attr("cluster_rank",function(d) { return d.cluster_size_rank;})
+                        .attr("y1",  function(d) { return yScale_bars(d.cluster_size_rank);})
+                        .attr("y2",  function(d) { return yScale_bars(d.cluster_size_rank);})
+                        //.attr("x2", function(d) { return xScale_bars((d.cluster_size-min_cluster_size)/(max_cluster_size-min_cluster_size)); })
+                        .attr("x2", function(d) { return xScale_bars(d.cluster_size); })
+                        .attr("x1", 100)
+                        .attr("stroke", function(d) {return `rgb(${parseFloat(d.rgb[0])}, ${parseFloat(d.rgb[1])}, ${parseFloat(d.rgb[2])})`; })
+                        .style("stroke-width", (height/datalength)*.7)
+                        .style("stroke-opacity", 0.7)
+                        .attr("id",function(d) { return d.hex; })
+                        .attr("ref_category",function(d) { return d.ref_category; })
+                        .attr("ref_name",function(d) { return d.ref_name; })
+                        .attr("pantone_name",function(d) { return d.pantone_name; });
+
+                paths.on("mouseover", function(d) {
+                    d3.select(this)
+                        .raise()
+                        .transition()
+                        .duration(200)
+                        .style("stroke-opacity", 1)
+                        .style("stroke-width", (height/datalength)*.85)
+                        tooltip
+                            .style("left", (d3.select(this).attr("x1")) + "px")
+                            .style("top", (d3.select(this).attr("y1")) + "px")
+                            .style("width", function() {return (200) + "px"})
+                            .style("stroke-opacity", 1)
+                            .text(d3.select(this).attr("id")+": "+d3.select(this).attr("pantone_name")+": "+d3.select(this).attr("ref_name"));
+                });
+
+                paths.on("mouseout", function(d) {
+                    d3.select(this)
+                        .raise()
+                        .transition()
+                        .duration(200)
+                        .style("stroke-opacity", 0.7)
+                        .style("stroke-width", (height/datalength)*.7)
+                    tooltip
+                        .transition()
+                        .duration(200)
+                        .style('opacity', 0);
+                });
+                paths.on("click", function(d) {
+                    let clicks = parseFloat(d3.select(this).attr("clicks"));
+                    d3.select(this)
+                        .attr("clicks",clicks += 1);
+                    if (parseFloat(d3.select(this).attr("clicks")) % 2 !== 0){
+                        d3.select(this)
+                            .style("stroke-opacity", 1)
+                        console.log(d3.select(this).attr("ref_name"))
+                    } else if (parseFloat(d3.select(this).attr("clicks")) % 2 === 0){
+                        d3.select(this)
+                            .style("stroke-opacity", 0.7)
+                    };
+                });
             };
-        });
-    };
 
-    d3.json("pallet.json", function(error, data) {
-        if (error) {
-            console.log("Error loading the JSON file:", error);
-            return;
-        }
+            d3.json("pallet.json", function(error, data) {
+                if (error) {
+                    console.log("Error loading the JSON file:", error);
+                    return;
+                }
 
-        // Event listener for slider1
-        slider1.on("input", function() {
-            let minValue = +this.value; // Get the minimum slider value
-            let maxValue = +slider2.property("value"); // Get the maximum slider value
-            filterData(data, minValue, maxValue); // Call a function to filter data based on the slider values
-        });
+                // Event listener for slider1
+                slider1.on("input", function() {
+                    let minValue = +this.value; // Get the minimum slider value
+                    let maxValue = +slider2.property("value"); // Get the maximum slider value
+                    filterData(data, minValue, maxValue); // Call a function to filter data based on the slider values
+                });
 
-        // Event listener for slider2
-        slider2.on("input", function() {
-            let minValue = +slider1.property("value"); // Get the minimum slider value
-            let maxValue = +this.value; // Get the maximum slider value
-            filterData(data, minValue, maxValue); // Call a function to filter data based on the slider values
-        });
+                // Event listener for slider2
+                slider2.on("input", function() {
+                    let minValue = +slider1.property("value"); // Get the minimum slider value
+                    let maxValue = +this.value; // Get the maximum slider value
+                    filterData(data, minValue, maxValue); // Call a function to filter data based on the slider values
+                });
 
-        // Initial visualization update with default slider values
-        let initialMinValue = +slider1.property("value");
-        let initialMaxValue = +slider2.property("value");
-        filterData(data, initialMinValue, initialMaxValue);
-    });
-</script>
+                // Initial visualization update with default slider values
+                let initialMinValue = +slider1.property("value");
+                let initialMaxValue = +slider2.property("value");
+                filterData(data, initialMinValue, initialMaxValue);
+            });
+        </script>
 
 </body>
 </html>
