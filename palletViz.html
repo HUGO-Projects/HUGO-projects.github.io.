@@ -389,7 +389,7 @@
                         .attr("x2", function(d) { return xScale_bars(d.cluster_size); })
                         .attr("x1", 100)
                         .attr("stroke", function(d) {return `rgb(${parseFloat(d.rgb[0])}, ${parseFloat(d.rgb[1])}, ${parseFloat(d.rgb[2])})`; })
-                        .style("stroke-width", (height/datalength)*.7)
+                        .style("stroke-width", (height/datalength)*.6)
                         .style("stroke-opacity", 0.7)
                         .attr("id",function(d) { return d.hex; })
                         .attr("ref_category",function(d) { return d.ref_category; })
@@ -417,7 +417,7 @@
                         .transition()
                         .duration(200)
                         .style("stroke-opacity", 0.7)
-                        .style("stroke-width", (height/datalength)*.7)
+                        .style("stroke-width", (height/datalength)*.6)
                     tooltip
                         .transition()
                         .duration(200)
