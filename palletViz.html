@@ -138,7 +138,7 @@
             }
 
             function updateVisualization(filteredData, sliderValue) {
-                svg.selectAll("circle").each(function() {
+                svg.selectAll("*").each(function() {
                     if (d3.select(this).attr("clicks") % 2 !== 0){
                         if (selected_colors.includes(d3.select(this).attr("id"))){
                             console.log(d3.select(this).attr("id"))
@@ -146,7 +146,7 @@
                             selected_colors.push(d3.select(this).attr("id"))
                             pallete_output[d3.select(this).attr("id")] = {
                                 "Color Hex":d3.select(this).attr("id"),
-                                "RGB":d3.select(this).attr("rgb"),
+                                "RGB":(d3.select(this).attr("rgb").split(',')).join(' '),
                                 "Hue":d3.select(this).attr("hue"),
                                 "Cluster Size":d3.select(this).attr("cluster_size"),
                                 "Cluster Rank":d3.select(this).attr("cluster_rank"),
@@ -155,15 +155,15 @@
                             }
                         }
                     }
-                });
+                })
 
-                svg.selectAll("*").remove();
+                
                 d3.select("#downloadButton").on("click", function() {
-                    svg.selectAll("circle").each(function() {
+                    svg.selectAll("*").each(function() {
                         if (d3.select(this).attr("clicks") % 2 !== 0){
                             pallete_output[d3.select(this).attr("id")] = {
                                 "Color Hex":d3.select(this).attr("id"),
-                                "RGB":d3.select(this).attr("rgb"),
+                                "RGB":(d3.select(this).attr("rgb").split(',')).join(' '),
                                 "Hue":d3.select(this).attr("hue"),
                                 "Cluster Size":d3.select(this).attr("cluster_size"),
                                 "Cluster Rank":d3.select(this).attr("cluster_rank"),
@@ -172,51 +172,87 @@
                             }
                         }
                     });
+                    console.log(pallete_output);
+                    generateAndDownloadCSV(pallete_output);
+                });
 
-                    /*console.log(pallete_output);
-                    const jsonString = JSON.stringify(pallete_output, null, 2);
-                    //const csvOutput = convertJSONtoCSV(data)
-                    const blob = new Blob([jsonString], { type: 'application/json' });
-                    const url = URL.createObjectURL(blob);
-                    const link = document.createElement('a');
-                    link.href = url;
-                    link.download = 'Selected_Colors.json';
-                    link.click();
-                    URL.revokeObjectURL(url);*/
-                    
-                    const dataArray = Object.values(pallete_output);
+                function generateAndDownloadCSV(data) {
+                    const dataArray = Object.values(data);
                     if (Array.isArray(dataArray)) {
-                        // Function to convert array of objects to CSV format
-                        function convertArrayOfObjectsToCSV(dataArray) {
+                        function convertArrayToCSV(dataArray) {
+                            // Convert array of objects to CSV format
                             const header = Object.keys(dataArray[0]).join(',') + '\n';
-
-                            const csv = dataArray.map(item => {
-                                return Object.values(item).join(',') + '\n';
-                            }).join('');
-
+                            const csv = dataArray.map(item => Object.values(item).join(',')).join('\n');
                             return header + csv;
                         }
 
                         // Create the CSV content
-                        const csvContent = convertArrayOfObjectsToCSV(dataArray);
+                        const csvContent = convertArrayToCSV(dataArray);
                         console.log(csvContent);
 
                         // Function to download CSV as a file
-                        function downloadCSV() {
-                            const encodedUri = encodeURI('data:text/csv;charset=utf-8,' + csvContent);
-                            const link = document.createElement('a');
-                            link.setAttribute('href', encodedUri);
-                            link.setAttribute('download', 'data.csv');
-                            document.body.appendChild(link);
-                            link.click();
-                        }
+                        //const encodedUri = encodeURI('data:text/csv;charset=utf-8,' + csvContent);
+                        //const link = document.createElement('a');
+                        //link.setAttribute('href', encodedUri);
+                        //link.setAttribute('download', 'data.csv');
 
-                        // Call the function to download the CSV file
-                        downloadCSV();
+                        const link = document.createElement('a');
+                        const blob = new Blob([csvContent], { type: 'application/csv' });
+                        const url = URL.createObjectURL(blob);
+                        link.href = url;
+                        link.download = 'Selected_Colors.csv';
+                        link.click();
+                        URL.revokeObjectURL(url);
+
+                        //document.body.appendChild(link);
+                       //link.download = 'Selected_Colors.csv';
+                        //link.click();
                     } else {
                         console.error('Data is not an array');
                     }
-                });
+                }
+                /*console.log(pallete_output);
+                const jsonString = JSON.stringify(pallete_output, null, 2);
+                const blob = new Blob([jsonString], { type: 'application/json' });
+                const url = URL.createObjectURL(blob);
+                const link = document.createElement('a');
+                link.href = url;
+                link.download = 'Selected_Colors.json';
+                link.click();
+                URL.revokeObjectURL(url);*/
+                
+                /*const dataArray = Object.values(pallete_output);
+                console.log(dataArray);
+                if (Array.isArray(dataArray)) {
+                    // Function to convert array of objects to CSV format
+                    function convertArrayToCSV(dataArray) {
+                        const header = Object.keys(dataArray[0]).join(',') + '\n';
+                        const csv = dataArray.map(item => {
+                            return Object.values(item).join(',') + '\n';
+                        }).join('');
+                        return header + csv;
+                    }
+
+                    // Create the CSV content
+                    const csvContent = convertArrayToCSV(dataArray);
+                    console.log(csvContent);
+
+                    // Function to download CSV as a file
+                    function downloadCSV() {
+                        const encodedUri = encodeURI('data:text/csv;charset=utf-8,' + convertArrayToCSV(dataArray));
+                        const link = document.createElement('a');
+                        link.setAttribute('href', encodedUri);
+                        link.setAttribute('download', 'data.csv');
+                        document.body.appendChild(link);
+                        link.click();
+                    }
+
+                    downloadCSV();
+                } else {
+                    console.error('Data is not an array');
+                }*/
+
+                svg.selectAll("*").remove();
 
                 svg.append("text")
                     .attr("x", 100)
