@@ -48,7 +48,7 @@
         .slider-container {
             display: flex;
             align-items: center;
-            width: 80%;
+            width: 50%;
             margin-bottom: 10px;
         }
 
@@ -80,7 +80,10 @@
         #dataviz {
             width: 100%;
         }
-
+        
+        .bold-text {
+            font-weight: bold;
+        }
     </style>
     </head>
     <body>
@@ -97,9 +100,12 @@
         <div class="pallet-container">
             <div id="download-link-container"></div>
             <div class="slider-container">
-                <label for="slider1">Range Filters:</label>
-                <input type="range" class="slider" id="slider1" min="0" max="255" value="0" step="10">
-                <input type="range" class="slider" id="slider2" min="0" max="255" value="255" step="10">
+                <label for="slider1">Color dominance upper threshold:</label>
+                <input type="range" class="slider" id="slider1" min="25" max="255" value="25" step="10">
+            </div>
+            <div class="slider-container">
+                <label for="slider2">Color dominance lower threshold:</label>
+                <input type="range" class="slider" id="slider2" min="25" max="255" value="255" step="10">
             </div>
             <button id="downloadButton">Download Selected Colors</button>
             <div id="dataviz"></div>
@@ -132,45 +138,42 @@
             }
 
             function updateVisualization(filteredData, sliderValue) {
-                svg.selectAll("*").each(function() {
+                svg.selectAll("circle").each(function() {
                     if (d3.select(this).attr("clicks") % 2 !== 0){
                         if (selected_colors.includes(d3.select(this).attr("id"))){
                             console.log(d3.select(this).attr("id"))
                         }else{
                             selected_colors.push(d3.select(this).attr("id"))
                             pallete_output[d3.select(this).attr("id")] = {
+                                "Color Hex":d3.select(this).attr("id"),
                                 "RGB":d3.select(this).attr("rgb"),
                                 "Hue":d3.select(this).attr("hue"),
-                                "Greyscale":d3.select(this).attr("gs"),
                                 "Cluster Size":d3.select(this).attr("cluster_size"),
                                 "Cluster Rank":d3.select(this).attr("cluster_rank"),
                                 "Similar Pantone Color Name":d3.select(this).attr("pantone_name"),
-                                "Similar Pantone Color Hex":d3.select(this).attr("pantone")
+                                "Similar Pantone Color Hex":d3.select(this).attr("pantone_hex")
                             }
                         }
                     }
                 });
 
                 svg.selectAll("*").remove();
-                
-                //const pallete_output = {};
                 d3.select("#downloadButton").on("click", function() {
-                    //button.on("click", () => {
-                    svg.selectAll("*").each(function() {
+                    svg.selectAll("circle").each(function() {
                         if (d3.select(this).attr("clicks") % 2 !== 0){
                             pallete_output[d3.select(this).attr("id")] = {
+                                "Color Hex":d3.select(this).attr("id"),
                                 "RGB":d3.select(this).attr("rgb"),
                                 "Hue":d3.select(this).attr("hue"),
-                                "Greyscale":d3.select(this).attr("gs"),
                                 "Cluster Size":d3.select(this).attr("cluster_size"),
                                 "Cluster Rank":d3.select(this).attr("cluster_rank"),
                                 "Similar Pantone Color Name":d3.select(this).attr("pantone_name"),
-                                "Similar Pantone Color Hex":d3.select(this).attr("pantone_hex"),
+                                "Similar Pantone Color Hex":d3.select(this).attr("pantone_hex")
                             }
                         }
                     });
 
-                    console.log(pallete_output);
+                    /*console.log(pallete_output);
                     const jsonString = JSON.stringify(pallete_output, null, 2);
                     //const csvOutput = convertJSONtoCSV(data)
                     const blob = new Blob([jsonString], { type: 'application/json' });
@@ -179,7 +182,40 @@
                     link.href = url;
                     link.download = 'Selected_Colors.json';
                     link.click();
-                    URL.revokeObjectURL(url);
+                    URL.revokeObjectURL(url);*/
+                    
+                    const dataArray = Object.values(pallete_output);
+                    if (Array.isArray(dataArray)) {
+                        // Function to convert array of objects to CSV format
+                        function convertArrayOfObjectsToCSV(dataArray) {
+                            const header = Object.keys(dataArray[0]).join(',') + '\n';
+
+                            const csv = dataArray.map(item => {
+                                return Object.values(item).join(',') + '\n';
+                            }).join('');
+
+                            return header + csv;
+                        }
+
+                        // Create the CSV content
+                        const csvContent = convertArrayOfObjectsToCSV(dataArray);
+                        console.log(csvContent);
+
+                        // Function to download CSV as a file
+                        function downloadCSV() {
+                            const encodedUri = encodeURI('data:text/csv;charset=utf-8,' + csvContent);
+                            const link = document.createElement('a');
+                            link.setAttribute('href', encodedUri);
+                            link.setAttribute('download', 'data.csv');
+                            document.body.appendChild(link);
+                            link.click();
+                        }
+
+                        // Call the function to download the CSV file
+                        downloadCSV();
+                    } else {
+                        console.error('Data is not an array');
+                    }
                 });
 
                 svg.append("text")
@@ -228,7 +264,7 @@
 
                 var xScale_bars = d3.scaleLinear()
                     .domain([min_cluster_size, max_cluster_size])
-                    .range([100, width*.5]);
+                    .range([100, width*.35]);
 
                 var yScale_bars = d3.scaleLinear()
                     .domain([min_cluster_rank, max_cluster_rank])
@@ -380,7 +416,6 @@
                         .attr("rgb",function(d) { return d.rgb;})
                         .attr("hue",function(d) { return d.hue;})
                         .attr("gs",function(d) { return d.gs;})
-                        .attr("hue",function(d) { return d.hue; })
                         .attr("cluster_size",function(d) { return d.cluster_size;})
                         .attr("cluster_rank",function(d) { return d.cluster_size_rank;})
                         .attr("y1",  function(d) { return yScale_bars(d.cluster_size_rank);})
@@ -394,7 +429,8 @@
                         .attr("id",function(d) { return d.hex; })
                         .attr("ref_category",function(d) { return d.ref_category; })
                         .attr("ref_name",function(d) { return d.ref_name; })
-                        .attr("pantone_name",function(d) { return d.pantone_name; });
+                        .attr("pantone_name",function(d) { return d.pantone_name; })
+                        .attr("pantone_hex",function(d) { return d.pantone_hex; });
 
                 paths.on("mouseover", function(d) {
                     d3.select(this)
